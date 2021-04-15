@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_POS_SALES_SET</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>POS - Pricing Offer / Retail Event</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Entries missing in table ZPOS_STORE_RCPT for Store=&amp;, Recipient=&amp;</ENTRY>
+     <LENGTH>130</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SALES_SET</CLSNAME>
+     <CMPNAME>CO_BOOL_01_FALSE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Boolean Variable (&apos;1&apos;=true,&apos;0&apos;=false)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SALES_SET</CLSNAME>
+     <CMPNAME>CO_BOOL_01_TRUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Boolean Variable (&apos;1&apos;=true,&apos;0&apos;=false)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SALES_SET</CLSNAME>
+     <CMPNAME>CO_ENGLISH_LANGUAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Language Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SALES_SET</CLSNAME>
+     <CMPNAME>CREATE_SALES_SET_IDOC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handler for Article Price --&gt; SalesSet Offer IDoc</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SALES_SET</CLSNAME>
+     <CMPNAME>GET_SALES_SET_DISCOUNT_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Utility Method --&gt; Gets Unique ID for SalesSet (Offer)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SALES_SET</CLSNAME>
+     <CMPNAME>MO_CONFIG_MAP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Description</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SALES_SET</CLSNAME>
+     <CMPNAME>MX_EXCEPTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>POS Exception Class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SALES_SET</CLSNAME>
+     <CMPNAME>STEP_PRICING_HANDLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates additional steps for Countries with Fixed Intervals</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

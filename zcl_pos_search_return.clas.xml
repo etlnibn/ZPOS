@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>POS Receipt Search &amp; Return Functionality</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Store</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Date</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Terminal</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Receipt</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>Cashier</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Amount</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>Time</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>End</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>Status</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>Rcpt Lines</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>011</KEY>
+     <ENTRY>Cash</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>012</KEY>
+     <ENTRY>Credit Card</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>013</KEY>
+     <ENTRY>Gift Card</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>014</KEY>
+     <ENTRY>Tillgodo</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>015</KEY>
+     <ENTRY>Bank Trfr</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>016</KEY>
+     <ENTRY>Invoice</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>ALV_SHOW_POS_WORKBENCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Utility --&gt; Show a Single Transaction in the CAR Workbench</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>CLOSE_DEKORT_ORDER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Close a Dekort Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>CO_RETURN_TYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sales Document Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>CREATE_INV_ADV_RETUR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates an Adv Return For Invoice</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>CREATE_POS_ADV_RETURN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates an Adv Return For POS</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>DISPLAY_SEARCH_RESULTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Display Results in ALV Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>EXECUTE_INVOICE_SEARCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Perform Invoice Search</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>EXECUTE_POS_SEARCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Perform POS Receipt Search</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>MT_POS_RESULT_LIST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>POS DTA - Receipt Search Transaction Table Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>ON_ALV_DOUBLE_CLICK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler --&gt; ALV Double Click Handler</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>UPDATE_RECEIPT_IN_CAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Updates Receipt in CAR with Return Info</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>UTIL_SEARCH_RESULT_TO_ALV</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Utility --&gt; Creates ALV Friendly Report Structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>VIEW_DOCUMENT_FLOW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Views the Document Flow</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>VIEW_INVOICE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Views the Invoice</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SEARCH_RETURN</CLSNAME>
+     <CMPNAME>VIEW_RECEIPT_IN_CAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Views a Receipt in SAP CAR</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

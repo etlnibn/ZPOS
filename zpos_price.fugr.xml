@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>POS Integration - Price Related Funcs</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZPOS_PRICE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_POS_GET_BBY_BY_ARTICLE</FUNCNAME>
+     <SHORT_TEXT>Gets Bonus Buys Based on Article</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_VTWEG</PARAMETER>
+       <DEFAULT>&apos;90&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VTWEG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_VKORG</PARAMETER>
+       <DEFAULT>&apos;1090&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VKORG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_WERKS</PARAMETER>
+       <DEFAULT>&apos;C003&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>WERKS_D</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PRICE_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>DATS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_CURRENCY</PARAMETER>
+       <DEFAULT>&apos;EUR&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>WAERS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_SALES_ORDER</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZPOS_ORDER_LINE_TTY</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_PRICED_ORDER</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZPOS_BBY_ORDER_TOTAL_TTY</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_OPEN_ORDER</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZPOS_ORDER_LINE_TTY</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_VTWEG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Selection Table for Distribution Channel (VTWEG)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_VKORG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Selection Table for Sales Organization (VKORG)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_WERKS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Selection Table for Plants (WERKS)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PRICE_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Field of type DATS</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_CURRENCY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Currency Key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_SALES_ORDER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>POS - Order Line - Table Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_PRICED_ORDER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>POS - Bonus Buy Total View - Table Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_OPEN_ORDER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>POS - Order Line - Table Type</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

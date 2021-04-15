@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_POS_MAG_ORDER_TEST</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Magento Shipping Notification API</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_MAG_ORDER_TEST</CLSNAME>
+     <CMPNAME>CREATE_BILLING_DOCUMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates Billing Document from Delivery</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_MAG_ORDER_TEST</CLSNAME>
+     <CMPNAME>CREATE_DELIVERY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Delivery for Magento Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_MAG_ORDER_TEST</CLSNAME>
+     <CMPNAME>GET_DELIVERY_VIA_DOCFLOW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Delivery Number from Document Flow</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_MAG_ORDER_TEST</CLSNAME>
+     <CMPNAME>INCREASE_INVENTORY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Test Only!! - Used to update the inventory before a GI</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_MAG_ORDER_TEST</CLSNAME>
+     <CMPNAME>PERFORM_DELIVERY_PGI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Test Only!! - Used to simulate the WMS Update for GI</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

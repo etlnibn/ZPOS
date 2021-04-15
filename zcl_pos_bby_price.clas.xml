@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_POS_BBY_PRICE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>POS - Bonus Buy Related Pricing</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_BBY_PRICE</CLSNAME>
+     <CMPNAME>BBY_PREREQUISITE_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>2a. Checks the Buy Side Prerequisites are fulfilled</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_BBY_PRICE</CLSNAME>
+     <CMPNAME>BBY_RULE_GROUP_FILL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>4. Fills a BBY Rule using Open Order Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_BBY_PRICE</CLSNAME>
+     <CMPNAME>CALC_PRICE_BUY_OR_GET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>3. Performs a price calculation for a Buy/Get Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_BBY_PRICE</CLSNAME>
+     <CMPNAME>CALC_PRICE_ONE_BBY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>2. Performs a price calculation for one single BBY</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_BBY_PRICE</CLSNAME>
+     <CMPNAME>CALC_REWARD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>5. Determines the Reward for a Group</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_BBY_PRICE</CLSNAME>
+     <CMPNAME>CALC_SALES_ORDER_PRICE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>1. Prices a Complete Sales Order using the applicable BBYs</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

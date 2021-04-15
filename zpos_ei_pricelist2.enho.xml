@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>POS Price List Enhancement</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>VKOI</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>VKOI</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLVKOI</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLVKOI</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPLVKOI\FO:READ_SEG_E1KOMG\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>* To include extra fields in the non-key fields of A990</item>
+      <item/>
+      <item>    IF s_e1komg-kschl = &apos;ZWSO&apos; AND s_e1komg-kotabnr = &apos;991&apos;.</item>
+      <item>      s_komg-zeff_price_type  = s_e1komg1-vadat_255(4).</item>
+      <item>      s_komg-zeff_price_fkey  = s_e1komg1-vadat_255+4(10).</item>
+      <item>      s_komg-zstd_price_fkey  = s_e1komg1-vadat_255+14(10).</item>
+      <item>      s_komg-zeff_price_level = s_e1komg1-vadat_255+24(1).</item>
+      <item>    ENDIF.</item>
+      <item/>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>5A657C1819021EDB909363F61DED2284</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>5A657C1819021EDB909363F61DED2284</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>039</LENGTH>
+       <TEXT>POS Price List Enhancement</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZPOS_EI_PRICELIST2</OBJ_NAME>
+     <CONCEPT>5A657C1819021EDB909363F61DED2284</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

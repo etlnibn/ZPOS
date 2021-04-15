@@ -1,0 +1,1432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZPOS</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>POS Integration Message Class</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Error Creating Conditions from WESOUT</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>You must enter an Application in Delta Processing Mode</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Specific Recipients and WIND updates --&gt; Unsupported Combination</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>&amp;1 IDocs created. Numbered from &amp;2 to &amp;3</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>You cannot search by credit card and another card type simultaneously</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>All Fields must be populated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Technical error getting own logical system - processing terminated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Error converting unit of measure &amp;1 to ISO code</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>IDoc contains updates for entries not found in ZPOS_SHELF_LBL</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Entry &amp;1 - &amp;2 not found in ZPOS_SHELF_LBL</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>Error determing Sales Org for Promo &amp;1 BBY &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>Error getting number from range &amp;1 - &amp;2 (check TCode &amp;3)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>Error getting GTIN code for &amp;1 with unit of measure &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>BBY &amp;1 has discount method &amp;2 - which cannot be mapped</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>BBY &amp;1 has no discount method - processing terminated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>BBY &amp;1 - unrecognized discount method or too complex to map</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>Sales Org &amp;1 was not expected - language could not be set</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>IDoc Type &amp;1 could not be created for BBY &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>027</MSGNR>
+     <TEXT>Could not determine ItemList ID for BBY &amp;1 Group &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>028</MSGNR>
+     <TEXT>For BBY &amp;1 no Stores were directly assigned - processing terminated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>029</MSGNR>
+     <TEXT>For Promo &amp;1 no Stores were directly assigned - processing terminated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>030</MSGNR>
+     <TEXT>BBY &amp;1 - could not determine discount amount for step</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>031</MSGNR>
+     <TEXT>Technical Error mapping IDoc in creation of status records</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>032</MSGNR>
+     <TEXT>TVARVC entry &quot;CAR_POS_SEARCH&quot; missing - RFC destination is unknown</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>033</MSGNR>
+     <TEXT>Technical Error - Status information not supplied in update</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>034</MSGNR>
+     <TEXT>Website Details Missing in Table ZPOS_WEBSITE</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>040</MSGNR>
+     <TEXT>Article &amp;1 has multiple tax rates - this should not happen</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>041</MSGNR>
+     <TEXT>Article &amp;1 has multiple purchase prices - this should not happen</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>042</MSGNR>
+     <TEXT>No mapping found for tax code: &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>043</MSGNR>
+     <TEXT>Article &amp;1 has a BOM item &amp;2 with no EAN code - processing stopped</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>050</MSGNR>
+     <TEXT>Selection Field &amp;1 is mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>051</MSGNR>
+     <TEXT>Wildcard values are not allowed in field &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>060</MSGNR>
+     <TEXT>Error retrieving data from table &amp;1 for delivery &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>061</MSGNR>
+     <TEXT>No route was found for Delivery &amp;1 - processing terminated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>062</MSGNR>
+     <TEXT>No Tracking Number found for Delivery &amp;1 - processing terminated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>063</MSGNR>
+     <TEXT>Magento Entity ID for order &amp;1 is missing - processing terminated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>064</MSGNR>
+     <TEXT>Magento Item Entity ID missing for order &amp;1 line &amp;2 - proc terminated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>065</MSGNR>
+     <TEXT>Sales Org &amp;1 is not currently supported - processing terminated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>066</MSGNR>
+     <TEXT>Article &amp;1 is defined as a bundle but has no child articles</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>067</MSGNR>
+     <TEXT>Article &amp;1 is not defined as a bundle but has child articles</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>100</MSGNR>
+     <TEXT>Error Creating IDoc Type &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>101</MSGNR>
+     <TEXT>ZPOS_PERSIST_PRICELIST - Report Help Text</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>102</MSGNR>
+     <TEXT>ZPOS_ARTICLE_OUTBOUND - Report Help Text</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>103</MSGNR>
+     <TEXT>ZPOS_ARTPRC_DELETE - Report Help Text</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>104</MSGNR>
+     <TEXT>ZPOS_ARTPRC_COPY - Report Help Text</TEXT>
+    </T100>
+   </T100>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>ZPOS002</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00009</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZPOS002</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;CAUSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You are attempting to run Delta Mode without specifying at least one</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>WESOUT Application value.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYSTEM_RESPONSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The programme will not continue until you have resolved the issue and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entered a WESOUT Application value.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;WHAT_TO_DO&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Select one or more options from the available list.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYS_ADMIN&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The technical reason for this is the WESD_WIND entries are specific to a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>WESOUT Application and this information is used to determine which delta</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>records are relevant. Therefore because you have chosen Delta processing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>mode you are required to enter an Application.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>ZPOS003</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00013</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZPOS003</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;CAUSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You are trying to run the programme for specific recipients - this is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>possible only if you disable the option to update WIND entries.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYSTEM_RESPONSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The programme will not continue.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;WHAT_TO_DO&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You have four possible options.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE> - Full Mode - specific recipients - no WIND updates.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>- Full Mode - all recipients - WIND updates can be performed.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>- Delta Mode - specific recipients - no WIND updates.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>- Delta Mode - all recipients - WIND updates can be performed.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYS_ADMIN&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The programme is designed to support selective updates for specific</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>recipients but in that situation the change pointers which are managed</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>in the WESD_WIND table should not be updated.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If you are happy to run the application for all recipients then the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>WESD_WIND updates should normally be processed.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>ZPOS005</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00005</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZPOS005</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;CAUSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You entered values in one of the search fields specifically used for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>credit card searching and also entered other card data in a separate</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>field. This combination is not allowed.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYSTEM_RESPONSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The search cannot be performed until you update or change your selection</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>criteria. Choose one way or the other when searching.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>ZPOS101</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00102</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZPOS101</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>BACKGROUND</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This programme is used to update the pricing details in the table</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ZPOS_PRICELIST. This table should provide the current selling price for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>all single items (or bundle items) for each store.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The data is created in several steps. The first step is in the WESOUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>process (see transaction code WESOUT). This takes data from several</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>input pricing conditions and produces a single output condition called</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ZWSO which is that used as the standard basis for pricing transactions</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>in POS, S4 and Magento.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Once the ZWSO pricing condition is created it triggers the creation of a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>change pointer in the WIND table which is then used by this programme.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In normal Delta Mode this programme looks for changes in the WIND table</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(via the WESD_WIND) table and processes the updates.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>At the same time it creates additional entries in table ZPOS_ARTPRC_STS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Article / Price Status) which records the status for each new pricing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entry.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Finally, using those entries it is possible to generate an outbound IDoc</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>or perform further processing (label printing).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>SELECTION SCREEN - MAIN OPTIONS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Full or Delta Update&lt;/&gt;. These two options control whether the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>programme will use the change pointers in the WIND tables as the basis</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>for adding data to the ZPOS_PRICELIST and ZPOS_ARTPRC_STS tables. The</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>normal default option would be to run the programme at least once per</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>day (usually much more often) to process changes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The reason to run the programme in Full Update Mode could be that the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>data in the ZPOS_PRICELIST table is out of sync with the current pricing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>conditions, or simply to trigger a full update to one recipient (see</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>comments below about recipients).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Update WIND&lt;/&gt;. This would normally be set as &lt;AB&gt;True&lt;/&gt; by</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>default. In delta update mode the programme would read the list of</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>changes which need processing. It would process these and then mark the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>records as processed by updating the entries in WESD_WIND table. You can</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>choose to update the WESD_WIND entries even if you are running a full</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>update. The logic in this case is that if you process all records then</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>you probably want to reset any change pointers (WIND entries) so that</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>you can process only new changes next time you run the delta update</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>mode.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Application&lt;/&gt;. This option is only ever used in conjunction with</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>delta updates, as the parameter is needed when reading the WESD_WIND</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>table.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Data Recipient&lt;/&gt;. This option is used when creating the records in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>table ZPOS_ARTPRC_STS. There is one record created for the combination</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>of line from table ZPOS_PRICELIST and the matching records in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ZPOS_STORE_RCPT. So if one pricing record is to be sent to 4 recipients</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>then 4 records will be created in ZPOS_ARTPRC_STS.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Normally you should not put any entries in this table. The static</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>configuration table ZPOS_STORE_RCPT controls how many records need to be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>created for each pricing records based on the store. You will be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>prevented from using this option in conjunction with the option to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>update the WIND entries. This is done because we do not wish to remove</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>WIND entries if they have not been processed for all recipient</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>applications.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>An example of when you might want to use this is when you would</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>specifically like to do a full initial load for one recipient. You could</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>select Full Update, deactivate the Update WIND option and then choose</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the specific recipient(s) from the list. This should then create the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>necessary entries to process the outbound communication - see follow on</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>steps.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>SELECTION SCREEN - ADDITIONAL OPTIONS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Date From / Date To&lt;/&gt;. These options are only used in conjunction</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>with Full Updates. Using these options you can copy pricing data which</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>is valid between the two dates specified. The dates entered do NOT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>represent a validity period in the normal sense - see example below.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Example: if you chose a range from 2021-01-01 until 2021-31-12 then</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>prices which have a start date less than 2021-31-12 (so any price which</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>comes into effect before the end of 2021). Those same prices need to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>have an end date which is greater than 2021-01-01 (so no prices which</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>have already expired). So a typical selection criteria would be to set</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the Date From to the current date, and the Date To should be sent until</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the end of time (default options).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>TABLE ZPOS_PRICELIST</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This specific table contains a price for a given data range for each</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>store and barcode (aka GTIN / EAN). Each row in the table can be sent to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>several recipients. The intention with this approach is to ensure that</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ensure recipient receives exactly the same data.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The main pricing information contained within this table include the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&quot;Normal&quot; or &quot;Standard&quot; price, and the &quot;Effective&quot; or current selling</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>price.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This table does not include comparison pricing information or net prices</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(prices without applicable taxes).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You can review the entries in transaction SE16 or SM30.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>TABLE ZPOS_STORE_RCPT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>As not all data is applicable for all recipients, this table controls</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>which data is sent to each recipient application. For example only</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>specific eCommerce stores are relevant for Magneto and this information</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>is mapping stores to recipient applications in configured in this table.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You can review the entries in transaction SE16 or SM30.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>TABLE ZPOS_ARTPRC_STS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This is the main table used to control the overall processing status of</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>a record. As mentioned above there is one record created for the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>combination of line from table ZPOS_PRICELIST and the matching records</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>in ZPOS_STORE_RCPT. So if one pricing record is to be sent to 4</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>recipients then 4 records will be created in ZPOS_ARTPRC_STS.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You can review the entries in transaction SE16 or SM30. There are some</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>simple utilities available to mass change the status of data in this</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>table, or delete historical entries.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>FOLLOW-ON STEPS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Once the pricing data has been moved to the table ZPOS_PRICELIST and the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>status records have been created in ZPOS_ARTPRC_STS then the data is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ready to be set out to recipients. This is controlled in another process</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>which will generate IDocs for each recipient and update the necessary</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>status records. See programme ZPOS_ARTICLE_OUTBOUND</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>ZPOS102</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00079</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZPOS102</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>BACKGROUND</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This programme is used as a follow-on step to the programme</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ZPOS_PERSIST_PRICELIST. This will take the article and pricing data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>generated in the WESOUT process and create the outbound Article IDocs -</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>type ZPOS_ARTICLE.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The data is created in several steps. The first step is in the WESOUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>process (see transaction code WESOUT). This takes data from several</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>input pricing conditions and produces a single output condition called</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ZWSO which is then used as the standard basis for pricing transactions</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>in POS, S4 and Magento.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>At the same time article related attributes are stored in table</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ZPOS_ARTICLE and ZPOS_ARTICLE_BOM. These tables contain data which is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>not date specific - it is always the latest version of the information</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>and as such is an extraction of the Article Master tables.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The data stored in the pricing details in the table ZPOS_PRICELIST is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>obviously date specific as is the status table ZPOS_ARTPRC_STS. This</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>pricing table should provide the current selling price for all single</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>items (or bundle items) for each store.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>SELECTION SCREEN - OPTIONS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Sales Organization, Distribution Channel, Store&lt;/&gt;. These selection</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>criteria are self-evident. They are optional. It will be common to leave</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>these selection options blank when processing all changes automatically</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>generated as a result of data changes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Valid-On and Lead Time&lt;/&gt;. These two values are used in combination</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>with each other. The valid-on parameter is used to decide which pricing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>changes are selected. For a record to be considered as relevant it needs</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>to have a price starting on or before the specified date and ending on</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>or after that same date. The lead time parameter can be used to include</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>future price changes. A value of 2 days means today and tomorrow, so if</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>you only want prices valid today and to exclude anything which changes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tomorrow then you should set this value to 1</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Normally the only choice you need to make as a user is whether you only</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>want prices valid today (then enter 1) or prices available today and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tomorrow (then set 2). If you want price changes one week in advance</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>then set the value to 7.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Data Recipient&lt;/&gt;. Here you can choose which applications are in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>scope for the generation of the IDocs. You must choose at least 1, but</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>can choose several, this would be the normal default mode. Each IDoc</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>which is generated will be specific to a Recipient and will only contain</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>data for 1 store.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Data Status&lt;/&gt;. When data is generated and ready to be sent to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>recipients it has status &lt;AB&gt;10 - Created&lt;/&gt;. Normally you would not</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>change the value on the selection screen and simply process those</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>records which are available to be sent. Once the data has been sent the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>status will change to &lt;AB&gt;20 - Sent&lt;/&gt;, and in some cases it can have</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>status &lt;AB&gt;50 - Confirmed&lt;/&gt;. The ability to change the status here is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>only for rare situations where data should be resent. In those cases a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>user could choose to select status 20 and then reprocess the data a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>second time. A record will be kept in the status table of the date and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>time the data is sent on each occasion.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Include Bill of Materials&lt;/&gt;. Some applications (Magento) need</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>additional Article data to be sent in the IDoc. This option controls</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>whether or not those segments are generated in the IDoc where</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>applicable. This relates to bundles / sales sets. If a recipient does</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>not need to know this information you can exclude the data by</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>unselecting the option.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Records per IDoc&lt;/&gt;. For optimal processing IDocs should not become</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>too big. This parameter gives the user the ability to control the size</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>of the IDoc. This is most applicable in large initial loads.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>IDOC ZPOS_ARTICLE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>A custom IDoc (ZPOS_ARTICLE) has been created for this process, it</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>consists of two segments. The main segment has a basic type of</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ZPOS_ARTICLE_01. This contains 30-40 fields with Article and pricing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>information. There is one instance of this segment for each article /</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>price combination. If the same article has two different prices on</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>different days then there will be 2 instances of this segment.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>For each instance of the ZPOS_ARTICLE_01 segment it is possible to have</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>an unlimited number of child segments representing the contents of the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bundle / sales set. This segment is ZPOS_ARTICLE_BOM_01. This contains a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>small number of fields describing the articles which form the bundle.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>These child articles do not have their own pricing at this level, they</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>are priced based on the parent article.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Within the size constraint limits (Records per IDoc) each IDoc will</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>contain data for one Recipient Application and one Store.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>PARTNER PROFILES</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Create partner profiles for message type ZPOS_ARTICLE , IDoc type</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ZPOS_ARTICLE_01, Message Function = Recipient Application eg. ES, MG,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>VK.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Data is not sent to the Label Printing Application via IDocs.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>ZPOS103</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00044</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZPOS103</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>BACKGROUND</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This programme is remove entries from various table related to the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Article Price integration which may no longer be needed e.g. data older</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>than 30 days.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The programme deletes data from the following tables if the selection</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>criteria and applied logic are successful.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt; - ZPOS_ARTPRC_STS - Article Price Status Table&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt; - ZPOS_PRICELIST - PriceList Table&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt; - ZPOS_ARTICLE - Article Details Table&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;- ZPOS_ARTICLE_BOM - Article Bill of Materials Table&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>SELECTION SCREEN - OPTIONS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Sales Organization, Distribution Channel, Store&lt;/&gt;. These selection</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>criteria are self-evident. They are optional. It will be common to leave</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>these selection options blank when removing data which is no longer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>required.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Data Older Than ....&lt;/&gt; This is probably the main selection criteria</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>and will select records which are older than the specified data. This</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>data must fulfill some other criteria before being deleted but this is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>one key check.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Data Status&lt;/&gt;. General Information. When data is generated ready to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>send to recipients it has status 10 - Created, and then when it is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>processed / sent it will have another status record with value 20.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Minimum Data status&lt;/&gt;. This option allows the user to control which</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>statuses are included. By default the option is always set to 20. This</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>means that for each article / store / recipient / date the information</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>must have been sent. It is normal that the same record exists multiple</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>times with different statuses (or even the same status is possible). The</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>reason for this is that all statuses are stored based on their</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>timestamp. So in this case we remove all records belonging to the same</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>logical record and remove them as long as the most recent record has</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>reached the specified status. If however, the most recent record is a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>lower status then none of the records belonging to this logical record</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>are removed. It is rare that a user would need to change this value.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Data Recipient&lt;/&gt;. A user can choose to only delete data for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>specific recipients. There are no obvious reasons for doing this but the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>option is supported.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>CONFIRMATION</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Once the selection criteria have been entered there will be a final</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>confirmation to check that the user is certain they wish to continue. If</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>they agree then the data will be deleted instantly and cannot be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>reversed.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If the programme is run in batch mode then there is no confirmation</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>checking, it is assumed that a user capable to creating batch jobs</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>understands the implications of the checks they are making.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>ZPOS104</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00022</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZPOS104</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>BACKGROUND</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This programme is used as a workaround for issues which may occur if the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>store / recipient data was not maintained correctly at the time the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>pricing data was generated.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If this happened then the necessary status records will be missing and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>it would not be possible to send the IDoc to the surrounding systems.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In this case you have the possibility to generate the necessary status</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>records for a recipient application afterwards.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The programme will refer to the entries in table &lt;AB&gt;ZPOS_STORE_RECPT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;/&gt;(so this needs to be updated first). If the entry is found it will</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>then take the pricing data from (&lt;AB&gt;ZPOS_PRICELIST&lt;/&gt;) and will then</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>create a status record with value &lt;AB&gt;10 - Created&lt;/&gt; . is generated and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>added to table &lt;AB&gt;ZPOS_ARTPRC_STS.&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>SELECTION SCREEN - OPTIONS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>All fields must be populated!</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Sales Organization, Distribution Channel, Store&lt;/&gt;. These selection</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>criteria are self-evident.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;AB&gt;Data Recipient&lt;/&gt;. Select the value for the recipient application</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>for which the status records should be generated.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Next Steps</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Once the data is generated it is possible to perform the subsequent</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>processing - such as sending data to external recipients.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

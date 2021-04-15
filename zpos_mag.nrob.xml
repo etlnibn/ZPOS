@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_NROB" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <OBJECT>ZPOS_MAG</OBJECT>
+    <DOMLEN>NUMC20</DOMLEN>
+    <PERCENTAGE>10.0</PERCENTAGE>
+    <CODE>ZPOS_MAG_NR</CODE>
+    <BUFFER>X</BUFFER>
+    <NOIVBUFFER>00000010</NOIVBUFFER>
+    <CHANGED_AT>20210324153338.917796</CHANGED_AT>
+    <CHANGED_BY>BRENNANN</CHANGED_BY>
+    <ENAME>BRENNANN</ENAME>
+    <EDATE>2021-03-24</EDATE>
+    <ETIME>07:40:47</ETIME>
+   </ATTRIBUTES>
+   <TEXT>
+    <LANGU>E</LANGU>
+    <OBJECT>ZPOS_MAG</OBJECT>
+    <TXT>Number Range used for articles to Magento</TXT>
+    <TXTSHORT>Magento Article Rang</TXTSHORT>
+    <ENAME>BRENNANN</ENAME>
+    <EDATE>2021-03-24</EDATE>
+    <ETIME>07:40:47</ETIME>
+   </TEXT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

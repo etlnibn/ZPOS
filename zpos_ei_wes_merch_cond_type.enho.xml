@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Custom Implementation of Condition Type Filter</SHORTTEXT>
+   <SPOT_NAME>WES_SPOT_MERCHANDISE</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>WES_SPOT_MERCHANDISE</SPOT_NAME>
+     <BADI_NAME>WES_MERCHANDISE_COND_TYPE</BADI_NAME>
+     <IMPL_NAME>ZPOS_WES_MERCH_COND_TYPE</IMPL_NAME>
+     <IMPL_CLASS>ZCL_POS_WES_MERCH_COND_TYPE</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>BADI Implementation for Condition Filtering in WESOUT</IMPL_SHORTTEXT>
+     <IMPL_SHORTTEXT_ID>5A65721F06021EEBA4DB1A929A6D51E3</IMPL_SHORTTEXT_ID>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>5A65721F06021EEBA4DB0E33F50931E0</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>5A65721F06021EEBA4DB0E33F50931E0</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <FLAG_CORR>X</FLAG_CORR>
+       <STATUS>R</STATUS>
+       <LENGTH>255</LENGTH>
+       <TEXT>Custom Implementation of Condition Type Filter</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+    <item>
+     <HEADER>
+      <CONCEPT>5A65721F06021EEBA4DB1A929A6D51E3</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>5A65721F06021EEBA4DB1A929A6D51E3</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <FLAG_CORR>X</FLAG_CORR>
+       <STATUS>R</STATUS>
+       <LENGTH>255</LENGTH>
+       <TEXT>BADI Implementation for Condition Filtering in WESOUT</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZPOS_EI_WES_MERCH_COND_TYPE</OBJ_NAME>
+     <CONCEPT>5A65721F06021EEBA4DB0E33F50931E0</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZPOS_EI_WES_MERCH_COND_TYPE</OBJ_NAME>
+     <CONCEPT>5A65721F06021EEBA4DB1A929A6D51E3</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_POS_CONFIG_TAB_HANLDER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Description</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_CONFIG_TAB_HANLDER</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_CONFIG_TAB_HANLDER</CLSNAME>
+     <CMPNAME>DELETE_ALL_ENTRIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deletes all entries from DB table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_CONFIG_TAB_HANLDER</CLSNAME>
+     <CMPNAME>GET_VK_TAX_CODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get the ViKING Tax Code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_CONFIG_TAB_HANLDER</CLSNAME>
+     <CMPNAME>INSERT_ENTRIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Inserts a table of entries in the DB table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_CONFIG_TAB_HANLDER</CLSNAME>
+     <CMPNAME>IS_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns &apos;X&apos; if a config setting is active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_CONFIG_TAB_HANLDER</CLSNAME>
+     <CMPNAME>IS_DISCGROUP_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check if BBYs can be mapped as Disc Groups</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_CONFIG_TAB_HANLDER</CLSNAME>
+     <CMPNAME>IS_MAGENTO_PRICE_CHECK_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check if Magento Pricing Check is Active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_CONFIG_TAB_HANLDER</CLSNAME>
+     <CMPNAME>IS_OFFER_EXTRA_SCALES_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check if Extra Pricing Scales should be generated - Offers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_CONFIG_TAB_HANLDER</CLSNAME>
+     <CMPNAME>IS_PRICE_EXTRA_SCALES_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check if Extra Pricing Scales should be generated - Prices</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_CONFIG_TAB_HANLDER</CLSNAME>
+     <CMPNAME>IS_SET_DISCOUNT_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check if Set Discount Option is Active</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

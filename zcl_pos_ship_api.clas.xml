@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_POS_SHIP_API</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Magento Shipping Notification API</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SHIP_API</CLSNAME>
+     <CMPNAME>GET_DELIVERY_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Retrieve All Relevant Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SHIP_API</CLSNAME>
+     <CMPNAME>MAP_SHIP_NOTIFY_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Maps the Delivery Shipment Data to the Magento API Payload</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_SHIP_API</CLSNAME>
+     <CMPNAME>SHIPPING_NOTIFICATION_HANDLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Entry point for Shipping Notification to Magento</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>POS - Pricing Offer / Retail Event</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Entries missing in table ZPOS_STORE_RCPT for Store=&amp;, Recipient=&amp;</ENTRY>
+     <LENGTH>130</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>APPEND_BBY_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Appends data for one BBY to the relevant tables</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>BUY_GET_HANDLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process Buy / Get Segments</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>CO_BOOL_01_FALSE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Boolean Variable (&apos;1&apos;=true,&apos;0&apos;=false)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>CO_BOOL_01_TRUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Boolean Variable (&apos;1&apos;=true,&apos;0&apos;=false)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>CO_ENGLISH_LANGUAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Language Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>CO_ZPOS_MSGID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>CREATE_RETAIL_EVENTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates Outbound Retail Events</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>CREATE_RETAIL_EVENT_IDOC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates Outbound Retail Event IDoc</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>DISCGRP_STEP_HANDLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process Get to create Steps</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>ELEMENT_SORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sorts the Offer Elements to meet FiftyTwo requirements</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>GET_ARTICLELIST_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Utility Method --&gt; Gets the Article List ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>GET_BASKET_INDICATOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Utility Method --&gt; Determines Basket / Discount Group</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>GET_BBY_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Utility Method --&gt; Gets the Bonus Buy ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>GET_DISCOUNT_METHOD_VALUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Utility Method --&gt; Determines the Discount Method / Vavlue</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>GET_MARM_EAN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Utility Method --&gt; Gets MARM-EAN11 Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>GET_SALESORG_LANGAUGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Utility Method --&gt; Sets Appropriate Langauge for SalesOrg</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>ITEMLIST_HANDLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates ItemList IDoc Segment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>MAP_STRUCT_TO_IDOC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Utility Method --&gt; Maps Data Struc to IDoc</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>MO_CONFIG_MAP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Description</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>MT_LIST_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>POS - ViKING Pricing Offer ItemList - ID Mapping</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>MT_PROMO_SENT_EXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sorted Promotion Table: Per Service-Supplied Stores</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>MT_SENT_EXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Bonus Buy Table: Stores Supplied via Service</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>MV_IS_BASKET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data element for domain BOOLE: TRUE (=&apos;X&apos;) and FALSE (=&apos; &apos;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>MX_EXCEPTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>POS Exception Class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>OFFER_HEADER_HANDLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates Outbound Offer Header Segment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_PROMOTION</CLSNAME>
+     <CMPNAME>STEP_PRICING_HANDLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates additional steps for Countries with Fixed Intervals</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

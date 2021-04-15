@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZPOS_SEARCH_TRANSACTION_STY</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <LANGDEP>X</LANGDEP>
+    <DDTEXT>POS DTA - Receipt Search Transaction Structure</DDTEXT>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZPOS_SEARCH_TRANS_FLAT_STY</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>POS DTA - Receipt Search Transaction Flat Structure</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+     <GROUPNAME>FLAT</GROUPNAME>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>RECEIPT_LINEITEM</FIELDNAME>
+     <ROLLNAME>ZPOS_SEARCH_RETAILLINEITEM_TTY</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>TTYP</DATATYPE>
+     <MASK>  TTYPL</MASK>
+     <COMPTYPE>L</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>RECEIPT_TENDER</FIELDNAME>
+     <ROLLNAME>ZPOS_SEARCH_TENDER_TTY</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>TTYP</DATATYPE>
+     <MASK>  TTYPL</MASK>
+     <COMPTYPE>L</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

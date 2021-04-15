@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_POS_UTIL</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Description</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_UTIL</CLSNAME>
+     <CMPNAME>CO_CAR_POS_SEARCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Logical destination (specified in function call)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_UTIL</CLSNAME>
+     <CMPNAME>CO_POS_RECIPIENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>POS - Data Recipient</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_UTIL</CLSNAME>
+     <CMPNAME>CREATE_APPL_LOG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Application log creation - Table of Messages</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_UTIL</CLSNAME>
+     <CMPNAME>GET_CAR_RFC_DESTINATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the RFC Destination for CAR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_UTIL</CLSNAME>
+     <CMPNAME>REMOVE_DEC_SEPARATOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Remove decimal separators from quantity fields</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_UTIL</CLSNAME>
+     <CMPNAME>WRITE_APPLICATION_LOG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Application log creation - Single Message</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

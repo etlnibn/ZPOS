@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Magento Article API</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>SOrg</ENTRY>
+     <LENGTH>130</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>DC</ENTRY>
+     <LENGTH>2</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Article</ENTRY>
+     <LENGTH>7</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Description</ENTRY>
+     <LENGTH>11</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>UoM</ENTRY>
+     <LENGTH>3</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Success</ENTRY>
+     <LENGTH>7</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>TimeStamp</ENTRY>
+     <LENGTH>9</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>Art Status</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>Art Msg</ENTRY>
+     <LENGTH>7</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>Bundle</ENTRY>
+     <LENGTH>6</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>011</KEY>
+     <ENTRY>Web Status</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>012</KEY>
+     <ENTRY>Web Msg</ENTRY>
+     <LENGTH>7</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>ALV_GET_ARTICLE_JSON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Magento Article Data in JSON format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>ARTICLE_CHECK_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks status of an individual article</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>ARTICLE_COLLECTIVE_HANDLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Send Articles (Plural) via Article API</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>ARTICLE_SINGLE_HANDLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single Article checks and transfer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>ASSIGN_ARTICLE_TO_WEBSITE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Assigns an Article to a website</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>BUNDLE_CHECK_CHILDREN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks existence of the bundle elements as articles</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>BUNDLE_DELETE_CHILD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deletes a child from a bundle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>BUNDLE_GET_CHILDREN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets all children for an article</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>DISPLAY_STATUS_ALV</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Displays the API results in ALV grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>GET_RECORDS_FOR_PROCESSING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Articles to be Processed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>MAP_ARTICLE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Magento Article API - Put Article</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>MT_ECOM_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Magento Article API Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>ON_ALV_DOUBLE_CLICK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler --&gt; ALV Double Click Handler</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>UPDATE_ARTICLE_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Updates the eComm Article status records</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_ARTICLE_API</CLSNAME>
+     <CMPNAME>UPDATE_ARTPRC_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Updates the main Article Price status records</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
