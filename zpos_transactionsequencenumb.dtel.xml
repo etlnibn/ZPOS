@@ -19,6 +19,19 @@
     <DEFFDNAME>TRANSACTIONSEQUENCENUMBER</DEFFDNAME>
     <REFKIND>D</REFKIND>
    </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Transaktionsnummer</DDTEXT>
+     <REPTEXT>Transaktionsnummer</REPTEXT>
+     <SCRTEXT_S>TransNr.</SCRTEXT_S>
+     <SCRTEXT_M>Transaktionsnummer</SCRTEXT_M>
+     <SCRTEXT_L>Transaktionsnummer</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>

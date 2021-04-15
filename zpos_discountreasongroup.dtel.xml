@@ -18,6 +18,19 @@
     <DTELMASTER>D</DTELMASTER>
     <REFKIND>D</REFKIND>
    </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Gruppe für Rabattgrund</DDTEXT>
+     <REPTEXT>RGGp</REPTEXT>
+     <SCRTEXT_S>Rbtgr.Grp.</SCRTEXT_S>
+     <SCRTEXT_M>Rabattgrundgruppe</SCRTEXT_M>
+     <SCRTEXT_L>Gruppe für Rabattgrund</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>

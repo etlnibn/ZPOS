@@ -11,6 +11,15 @@
     <CONVEXIT>ALPHA</CONVEXIT>
     <DDTEXT>10 Figure Character String with Alpha Conversion</DDTEXT>
    </DD01V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD01_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Zeichenkette 10 Stellen mit Alpha-Konvertierung</DDTEXT>
+    </item>
+   </DD01_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>

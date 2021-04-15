@@ -12,6 +12,15 @@
     <SIGNFLAG>X</SIGNFLAG>
     <DDTEXT>Currency Amount</DDTEXT>
    </DD01V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD01_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Währungsbetrag</DDTEXT>
+    </item>
+   </DD01_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>

@@ -19,6 +19,19 @@
     <DEFFDNAME>REDUCTIONAMOUNT</DEFFDNAME>
     <REFKIND>D</REFKIND>
    </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Rabattwert</DDTEXT>
+     <REPTEXT>Rabattwert</REPTEXT>
+     <SCRTEXT_S>Rabattwert</SCRTEXT_S>
+     <SCRTEXT_M>Rabattwert</SCRTEXT_M>
+     <SCRTEXT_L>Rabattwert</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>

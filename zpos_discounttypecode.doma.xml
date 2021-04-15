@@ -12,6 +12,15 @@
     <CONVEXIT>ALPHA</CONVEXIT>
     <DDTEXT>Discount Category Code</DDTEXT>
    </DD01V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD01_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Rabatttypcode</DDTEXT>
+    </item>
+   </DD01_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>

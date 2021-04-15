@@ -19,6 +19,19 @@
     <DEFFDNAME>REFERENCEID</DEFFDNAME>
     <REFKIND>D</REFKIND>
    </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Referenznummer</DDTEXT>
+     <REPTEXT>Referenznummer</REPTEXT>
+     <SCRTEXT_S>RefNr.</SCRTEXT_S>
+     <SCRTEXT_M>Referenznummer</SCRTEXT_M>
+     <SCRTEXT_L>Referenznummer</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>

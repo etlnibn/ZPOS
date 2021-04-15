@@ -19,6 +19,19 @@
     <DEFFDNAME>ITEMID</DEFFDNAME>
     <REFKIND>D</REFKIND>
    </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Artikel-ID</DDTEXT>
+     <REPTEXT>Artikel-ID</REPTEXT>
+     <SCRTEXT_S>Art-ID</SCRTEXT_S>
+     <SCRTEXT_M>Artikel-ID</SCRTEXT_M>
+     <SCRTEXT_L>Artikel-ID</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>

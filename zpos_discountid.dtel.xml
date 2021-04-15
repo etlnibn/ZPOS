@@ -19,6 +19,19 @@
     <DEFFDNAME>DISCOUNTID</DEFFDNAME>
     <REFKIND>D</REFKIND>
    </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Rabatt-ID</DDTEXT>
+     <REPTEXT>Rabatt-ID</REPTEXT>
+     <SCRTEXT_S>Rabatt-ID</SCRTEXT_S>
+     <SCRTEXT_M>Rabatt-ID</SCRTEXT_M>
+     <SCRTEXT_L>Rabatt-ID</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>
