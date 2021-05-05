@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>DTEL</OBJECT>
+     <OBJ_NAME>ZXI_FIND_CUSTOMER_RESULT_OUTCO</OBJ_NAME>
+     <OBJECT_M>INTF</OBJECT_M>
+     <OBJ_NAME_M>ZXI_II_SI_IS_MAGENTO_FIND_CUST</OBJ_NAME_M>
+     <HASH_ID>4B1EDEC5523C0CC2F17DCEB6578A73B76E01FE15</HASH_ID>
+     <ID>&lt;type&gt; FindCustomerResultOutcome http://bauhaus.net/webshopb2bwebservice SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>FindCustomerResultOutcome</IFR_NAME>
+     <IFR_NSPCE>http://bauhaus.net/webshopb2bwebservice</IFR_NSPCE>
+     <IFR_GNSPCE>SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>ZXI_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://bauhaus.net/webshopb2bwebservice</X-ML_NSPCE>
+     <X-ML_NAME>FindCustomerResultOutcome</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>DTEL</OBJECT>
+     <OBJ_NAME>ZXI_FIND_CUSTOMER_RESULT_OUTCO</OBJ_NAME>
+     <OBJECT1>DTEL</OBJECT1>
+     <OBJ_NAME1>ZXI_FIND_CUSTOMER_RESULT_OUTCO</OBJ_NAME1>
+     <OBJECT2>DTEL</OBJECT2>
+     <OBJ_NAME2>ZXI_FIND_CUSTOMER_RESULT_OUTCO</OBJ_NAME2>
+     <ID>&lt;type&gt; FindCustomerResultOutcome http://bauhaus.net/webshopb2bwebservice SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>FindCustomerResultOutcome</IFR_NAME>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>DTEL</R3_TYPE>
+     <R3_NAME>ZXI_FIND_CUSTOMER_RESULT_OUTCO</R3_NAME>
+     <R3_TEXT>Proxy Data Element (generated)</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <FURTHERDATA>&lt;asx:abap xmlns:asx=&quot;http://www.sap.com/abapxml&quot; version=&quot;1.0&quot;&gt;&lt;asx:values&gt;&lt;DATA&gt;&lt;IFR_T_ENUM&gt;&lt;item&gt;None&lt;/item&gt;&lt;item&gt;One&lt;/item&gt;&lt;item&gt;Multiple&lt;/item&gt;&lt;item&gt;Support&lt;/item&gt;&lt;/IFR_T_ENUM&gt;&lt;/DATA&gt;&lt;/asx:values&gt;&lt;/asx:abap&gt;</FURTHERDATA>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT_M>INTF</OBJECT_M>
+     <OBJ_NAME_M>ZXI_II_SI_IS_MAGENTO_BUSINESS</OBJ_NAME_M>
+     <HASH_ID>F60A24EEE4D929A19237EAF17C396CA95AB68955</HASH_ID>
+     <ID>&lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ZMAG_BUS_PARTNER_STY</IFR_NAME>
+     <IFR_GNSPCE>SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>ZXI_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NAME>ZMAG_BUS_PARTNER_STY</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ADDRESSLINE1</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ADDRESSLINE1</OBJ_NAME2>
+     <ID>&lt;element&gt; ADDRESSLINE1 &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ADDRESSLINE1</IFR_NAME>
+     <IFR_TEXT>Street</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>60</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ADDRESSLINE1</R3_NAME>
+     <R3_TEXT>Street</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000060</R3_LENGTH>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ADDRESSLINE2</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ADDRESSLINE2</OBJ_NAME2>
+     <ID>&lt;element&gt; ADDRESSLINE2 &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ADDRESSLINE2</IFR_NAME>
+     <IFR_TEXT>Street</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>60</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ADDRESSLINE2</R3_NAME>
+     <R3_TEXT>Street</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000060</R3_LENGTH>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ATTNAME</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ATTNAME</OBJ_NAME2>
+     <ID>&lt;element&gt; ATTNAME &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ATTNAME</IFR_NAME>
+     <IFR_TEXT>Full name of a party (Bus. Partner, Org. Unit, Doc. address)</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>80</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ATTNAME</R3_NAME>
+     <R3_TEXT>Full name of a party (Bus. Partner, Org. Unit, Doc. address)</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000080</R3_LENGTH>
+     <R3_SEQNUM>000005</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>COMPANYNAME1</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>COMPANYNAME1</OBJ_NAME2>
+     <ID>&lt;element&gt; COMPANYNAME1 &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>COMPANYNAME1</IFR_NAME>
+     <IFR_TEXT>Name 1 of organization</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>40</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>COMPANYNAME1</R3_NAME>
+     <R3_TEXT>Name 1 of organization</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000040</R3_LENGTH>
+     <R3_SEQNUM>000006</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>COMPANYNAME2</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>COMPANYNAME2</OBJ_NAME2>
+     <ID>&lt;element&gt; COMPANYNAME2 &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>COMPANYNAME2</IFR_NAME>
+     <IFR_TEXT>Name 2 of organization</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>40</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>COMPANYNAME2</R3_NAME>
+     <R3_TEXT>Name 2 of organization</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000040</R3_LENGTH>
+     <R3_SEQNUM>000007</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>COUNTRY</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>COUNTRY</OBJ_NAME2>
+     <ID>&lt;element&gt; COUNTRY &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>COUNTRY</IFR_NAME>
+     <IFR_TEXT>Country Key</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>3</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>COUNTRY</R3_NAME>
+     <R3_TEXT>Country Key</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000003</R3_LENGTH>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>CREDITLIMIT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>CREDITLIMIT</OBJ_NAME2>
+     <ID>&lt;element&gt; CREDITLIMIT &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>CREDITLIMIT</IFR_NAME>
+     <IFR_TEXT>Numeric Character Field, Length 10</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>10</IFR_MAXLEN>
+     <IFR_PATTRN>\d+</IFR_PATTRN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>CREDITLIMIT</R3_NAME>
+     <R3_TEXT>Numeric Character Field, Length 10</R3_TEXT>
+     <R3_DATATYP>NUMC</R3_DATATYP>
+     <R3_LENGTH>000010</R3_LENGTH>
+     <R3_SEQNUM>000008</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>EMAIL</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>EMAIL</OBJ_NAME2>
+     <ID>&lt;element&gt; EMAIL &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>EMAIL</IFR_NAME>
+     <IFR_TEXT>E-Mail Address</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>241</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>EMAIL</R3_NAME>
+     <R3_TEXT>E-Mail Address</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000241</R3_LENGTH>
+     <R3_SEQNUM>000009</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>EMAILINVOICE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>EMAILINVOICE</OBJ_NAME2>
+     <ID>&lt;element&gt; EMAILINVOICE &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>EMAILINVOICE</IFR_NAME>
+     <IFR_TEXT>E-Mail Address</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>241</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>EMAILINVOICE</R3_NAME>
+     <R3_TEXT>E-Mail Address</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000241</R3_LENGTH>
+     <R3_SEQNUM>000010</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>FILES</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>FILES</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>ZXI_ZMAG_FILE_DATA_TTY</OBJ_NAME_R>
+     <ID>&lt;element&gt; FILES &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>FILES</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>FILES</R3_NAME>
+     <R3_SEQNUM>000018</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>PARTNERID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>PARTNERID</OBJ_NAME2>
+     <ID>&lt;element&gt; PARTNERID &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>PARTNERID</IFR_NAME>
+     <IFR_TEXT>Business Partner Number</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>10</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>PARTNERID</R3_NAME>
+     <R3_TEXT>Business Partner Number</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000010</R3_LENGTH>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>POSTAREA</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>POSTAREA</OBJ_NAME2>
+     <ID>&lt;element&gt; POSTAREA &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>POSTAREA</IFR_NAME>
+     <IFR_TEXT>City</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>40</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>POSTAREA</R3_NAME>
+     <R3_TEXT>City</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000040</R3_LENGTH>
+     <R3_SEQNUM>000011</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>POSTCODE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>POSTCODE</OBJ_NAME2>
+     <ID>&lt;element&gt; POSTCODE &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>POSTCODE</IFR_NAME>
+     <IFR_TEXT>City postal code</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>10</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>POSTCODE</R3_NAME>
+     <R3_TEXT>City postal code</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000010</R3_LENGTH>
+     <R3_SEQNUM>000012</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>RATING</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>RATING</OBJ_NAME2>
+     <ID>&lt;element&gt; RATING &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>RATING</IFR_NAME>
+     <IFR_TEXT>Component of the Version Number</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>2</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>RATING</R3_NAME>
+     <R3_TEXT>Component of the Version Number</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000002</R3_LENGTH>
+     <R3_SEQNUM>000013</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>SHOPID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>SHOPID</OBJ_NAME2>
+     <ID>&lt;element&gt; SHOPID &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>SHOPID</IFR_NAME>
+     <IFR_TEXT>Plant</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>4</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>SHOPID</R3_NAME>
+     <R3_TEXT>Plant</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000004</R3_LENGTH>
+     <R3_SEQNUM>000015</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>SSN</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>SSN</OBJ_NAME2>
+     <ID>&lt;element&gt; SSN &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>SSN</IFR_NAME>
+     <IFR_TEXT>Identification Number</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>60</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>SSN</R3_NAME>
+     <R3_TEXT>Identification Number</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000060</R3_LENGTH>
+     <R3_SEQNUM>000014</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>TELEPHONE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>TELEPHONE</OBJ_NAME2>
+     <ID>&lt;element&gt; TELEPHONE &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>TELEPHONE</IFR_NAME>
+     <IFR_TEXT>First telephone no.: dialling code+number</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>30</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>TELEPHONE</R3_NAME>
+     <R3_TEXT>First telephone no.: dialling code+number</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000030</R3_LENGTH>
+     <R3_SEQNUM>000016</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>VATNUMBER</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>VATNUMBER</OBJ_NAME2>
+     <ID>&lt;element&gt; VATNUMBER &lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>VATNUMBER</IFR_NAME>
+     <IFR_TEXT>Business Partner Tax Number</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>60</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>VATNUMBER</R3_NAME>
+     <R3_TEXT>Business Partner Tax Number</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000060</R3_LENGTH>
+     <R3_SEQNUM>000017</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZXI_ZMAG_BUS_PARTNER_STY</OBJ_NAME2>
+     <ID>&lt;type&gt; ZMAG_BUS_PARTNER_STY  SI_IS_Magento_BusinessPartner(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ZMAG_BUS_PARTNER_STY</IFR_NAME>
+     <IFR_TEXT>eCom - Magento Business Partner</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZXI_ZMAG_BUS_PARTNER_STY</R3_NAME>
+     <R3_TEXT>eCom - Magento Business Partner</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

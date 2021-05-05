@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_CAT_LINKS_TTY</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>ZXI_CO_SI_OS_MAGENTO_PRODUCT_E</OBJ_NAME_M>
+     <HASH_ID>CE56FB3C3D07F8D6BF2D2407A2BA55DA90BD8938</HASH_ID>
+     <ID>&lt;type&gt; ZPOS_MAG_CAT_LINKS_TTY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ZPOS_MAG_CAT_LINKS_TTY</IFR_NAME>
+     <IFR_GNSPCE>SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>ZXI_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NAME>ZPOS_MAG_CAT_LINKS_TTY</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_CAT_LINKS_TTY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>CATEGORY_ID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>CATEGORY_ID</OBJ_NAME2>
+     <ID>&lt;element&gt; category_id &lt;type&gt; ZPOS_MAG_CAT_LINKS_TTY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>category_id</IFR_NAME>
+     <IFR_TEXT>POS - Magento Category ID</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>5</IFR_MAXLEN>
+     <IFR_PATTRN>\d+</IFR_PATTRN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>CATEGORY_ID</R3_NAME>
+     <R3_TEXT>POS - Magento Category ID</R3_TEXT>
+     <R3_DATATYP>NUMC</R3_DATATYP>
+     <R3_LENGTH>000005</R3_LENGTH>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_CAT_LINKS_TTY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>POSITION</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>POSITION</OBJ_NAME2>
+     <ID>&lt;element&gt; position &lt;type&gt; ZPOS_MAG_CAT_LINKS_TTY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>position</IFR_NAME>
+     <IFR_TEXT>Integer 1</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>unsignedByte</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>POSITION</R3_NAME>
+     <R3_TEXT>Integer 1</R3_TEXT>
+     <R3_DATATYP>INT1</R3_DATATYP>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_CAT_LINKS_TTY</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZXI_ZPOS_MAG_CAT_LINKS_TTY</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZXI_ZPOS_MAG_CAT_LINKS_TTY</OBJ_NAME2>
+     <ID>&lt;type&gt; ZPOS_MAG_CAT_LINKS_TTY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ZPOS_MAG_CAT_LINKS_TTY</IFR_NAME>
+     <IFR_TEXT>Magento Product API - PUT Structure - Category Links</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZXI_ZPOS_MAG_CAT_LINKS_TTY</R3_NAME>
+     <R3_TEXT>Magento Product API - PUT Structure - Category Links</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

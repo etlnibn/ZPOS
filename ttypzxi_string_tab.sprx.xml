@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TTYP</OBJECT>
+     <OBJ_NAME>ZXI_STRING_TAB</OBJ_NAME>
+     <OBJECT_M>INTF</OBJECT_M>
+     <OBJ_NAME_M>ZXI_II_SI_IS_MAGENTO_FIND_CUST</OBJ_NAME_M>
+     <HASH_ID>568941B0525B3CB8700FDE9F1E52EEC863ECC19D</HASH_ID>
+     <ID>TableOf&lt;type&gt; string http://www.w3.org/2001/XMLSchema SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>TableOftype</IFR_TYPE>
+     <IFR_NAME>string</IFR_NAME>
+     <IFR_NSPCE>http://www.w3.org/2001/XMLSchema</IFR_NSPCE>
+     <IFR_GNSPCE>SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>ZXI_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TTYP</OBJECT>
+     <OBJ_NAME>ZXI_STRING_TAB</OBJ_NAME>
+     <OBJECT1>TTYP</OBJECT1>
+     <OBJ_NAME1>ZXI_STRING_TAB</OBJ_NAME1>
+     <OBJECT2>TTYP</OBJECT2>
+     <OBJ_NAME2>ZXI_STRING_TAB</OBJ_NAME2>
+     <ID>TableOf&lt;type&gt; string http://www.w3.org/2001/XMLSchema SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>TableOftype</IFR_TYPE>
+     <IFR_NAME>string</IFR_NAME>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TTYP</R3_TYPE>
+     <R3_NAME>ZXI_STRING_TAB</R3_NAME>
+     <R3_TEXT>Proxy Table Type (generated)</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

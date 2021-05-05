@@ -3,7 +3,8 @@ class ZCL_POS_WSO_ARTICLE_PRICE definition
   final
   create public
 
-  global friends ZCL_POS_ARTICLE_API .
+  global friends ZCL_POS_ARTICLE_2_API
+                 ZCL_POS_ARTICLE_API .
 
 public section.
 
@@ -61,6 +62,17 @@ public section.
       !IT_R_VKORG type WRF_VKORG_RTTY optional
       !IT_R_WERKS type WRF_WERKS_RTTY optional
       !IV_OLDER_THAN type DATS .
+  class-methods GET_ARTICLE_PRICE
+    importing
+      !IV_VTWEG type VTWEG
+      !IV_VKORG type VKORG
+      !IV_WERKS type WERKS_D
+      !IV_MATNR type MATNR
+      !IV_VALID_TO type DATS default SY-DATUM
+      !IV_VALID_FROM type DATS default SY-DATUM
+      !IV_EAN11 type EAN11
+    returning
+      value(RS_PRICELIST) type ZPOS_ARTICLE_PRICE_STY .
   class-methods GET_ARTICLE_PRICES
     importing
       !IT_R_VTWEG type WRF_VTWEG_RTTY
@@ -88,28 +100,28 @@ public section.
     changing
       !CS_COND_ART type ITEM_SACO_MAPPING .
   methods NEW_PACKAGE_RESET .
-  PROTECTED SECTION.
+protected section.
 
-    CLASS-METHODS get_article_pricelist
-      IMPORTING
-        !iv_create_bom          TYPE boole_d OPTIONAL
-        !iv_status              TYPE zpos_recipient_status DEFAULT '10'
-        !it_r_recipient         TYPE zpos_r_recipient_tty OPTIONAL
-        !it_r_vtweg             TYPE wrf_vtweg_rtty OPTIONAL
-        !it_r_vkorg             TYPE wrf_vkorg_rtty OPTIONAL
-        !it_r_werks             TYPE wrf_werks_rtty OPTIONAL
-        !iv_valid_on            TYPE dats
-        !iv_leadtime            TYPE i DEFAULT 2
-        !iv_vkorg               TYPE vkorg
-        !it_r_matnr             TYPE wrf_matnr_rtty OPTIONAL
-      RETURNING
-        VALUE(rt_article_price) TYPE zpos_article_price_tty
-      RAISING
-        zcx_pos_exception .
-  PRIVATE SECTION.
+  class-methods GET_ARTICLE_PRICELIST
+    importing
+      !IV_CREATE_BOM type BOOLE_D optional
+      !IV_STATUS type ZPOS_RECIPIENT_STATUS default '10'
+      !IT_R_RECIPIENT type ZPOS_R_RECIPIENT_TTY optional
+      !IT_R_VTWEG type WRF_VTWEG_RTTY optional
+      !IT_R_VKORG type WRF_VKORG_RTTY optional
+      !IT_R_WERKS type WRF_WERKS_RTTY optional
+      !IV_VALID_ON type DATS
+      !IV_LEADTIME type I default 2
+      !IV_VKORG type VKORG
+      !IT_R_MATNR type WRF_MATNR_RTTY optional
+    returning
+      value(RT_ARTICLE_PRICE) type ZPOS_ARTICLE_PRICE_TTY
+    raising
+      ZCX_POS_EXCEPTION .
+private section.
 
-    TYPES:
-      BEGIN OF ty_zwso_price.
+  types:
+    BEGIN OF ty_zwso_price.
         INCLUDE  TYPE a991.
     TYPES:
         kbetr TYPE kbetr_kond,
@@ -117,8 +129,8 @@ public section.
         kpein TYPE kpein,
         kmein TYPE kmein,
       END OF ty_zwso_price .
-    TYPES:
-      BEGIN OF ty_short_konp.
+  types:
+    BEGIN OF ty_short_konp.
     TYPES:
       knumh TYPE knumh,
       kopos TYPE kopos,
@@ -129,15 +141,15 @@ public section.
       kmein TYPE kmein,
       aktnr TYPE waktion,
       END OF ty_short_konp .
-    TYPES:
-      BEGIN OF ty_short_wakp.
+  types:
+    BEGIN OF ty_short_wakp.
     TYPES:
       aktnr        TYPE waktion,
       offer_id     TYPE wpm_offerid_price,
       offer_id_dsc TYPE wpm_offerid_discount,
       END OF ty_short_wakp .
-    TYPES:
-      BEGIN OF ty_vkpo_gpa1_map.
+  types:
+    BEGIN OF ty_vkpo_gpa1_map.
     TYPES:
       vkpo_knumh TYPE knumh,
       gpa1_knumh TYPE knumh,
@@ -157,108 +169,102 @@ public section.
 *    CONSTANTS co_promotion_price TYPE kscha VALUE 'VKA0' ##NO_TEXT.
 *    CONSTANTS co_standard_comp_price TYPE kscha VALUE 'ZCP0' ##NO_TEXT.
 *    CONSTANTS zcl_pos_util=>co_condition_type-standard_price TYPE kscha VALUE 'VKP0' ##NO_TEXT.
+  data CO_USAGE type KVEWE value 'A' ##NO_TEXT.
+  data MT_COND_ART type TT_ITEM_SACO_MAPPING .
+  data:
+    mt_vkp0_gpa1_map TYPE STANDARD TABLE OF ty_vkpo_gpa1_map .
+  data MT_WESOUT_PRICE type ZPOS_WES_T_SALES_PRICES_HEAD .
+  class-data SR_CO type ref to CL_WES_CONST .
+  class-data MX_EXCEPTION type ref to ZCX_POS_EXCEPTION .
+  class-data MS_TEXTID type SCX_T100KEY .
+  constants CO_DELETE type STRING value 'DELETE' ##NO_TEXT.
+  class-data MT_ECOM_STATUS type ZECM_ARTICLE_STS_TTY .
+  class-data MO_CONFIG_MAP type ref to ZCL_POS_CONFIG_TAB_HANLDER .
 
-    DATA co_usage TYPE kvewe VALUE 'A' ##NO_TEXT.
-    DATA mt_cond_art TYPE tt_item_saco_mapping .
-    DATA:
-      mt_vkp0_gpa1_map TYPE STANDARD TABLE OF ty_vkpo_gpa1_map .
-    DATA mt_wesout_price TYPE zpos_wes_t_sales_prices_head .
-    CLASS-DATA sr_co TYPE REF TO cl_wes_const .
-    CLASS-DATA mx_exception TYPE REF TO zcx_pos_exception .
-    CLASS-DATA ms_textid TYPE scx_t100key .
-    CONSTANTS co_delete TYPE string VALUE 'DELETE' ##NO_TEXT.
-    CLASS-DATA mt_ecom_status TYPE zecm_article_sts_tty .
-    CLASS-DATA mo_config_map TYPE REF TO zcl_pos_config_tab_hanlder .
-
-    CLASS-METHODS calculate_net_price
-      IMPORTING
-        !iv_input_price     TYPE kbetr
-        !iv_tax_rate        TYPE kbetr
-      RETURNING
-        VALUE(rv_net_price) TYPE kbetr .
-    CLASS-METHODS create_persist_label_data
-      IMPORTING
-        !it_article TYPE zpos_article_tty .
-    CLASS-METHODS create_status_records
-      IMPORTING
-        !it_article_price TYPE zpos_article_price_tty
-        !it_idoc_map      TYPE ty_t_idoc_map OPTIONAL
-        !iv_status        TYPE zpos_recipient_status
-      RETURNING
-        VALUE(rv_count)   TYPE syst_dbcnt
-      RAISING
-        zcx_pos_exception .
-    CLASS-METHODS get_viking_tax_code
-      CHANGING
-        !cv_tax_code TYPE mwskz .
-    CLASS-METHODS magento_pricing_check
-      CHANGING
-        VALUE(ct_article_price) TYPE zpos_article_price_tty .
-    CLASS-METHODS read_layout_module
-      IMPORTING
-        !it_r_matnr      TYPE wrf_matnr_rtty
-        !it_r_werks      TYPE tdt_rg_kunnr
-      RETURNING
-        VALUE(rt_layout) TYPE ty_t_layout .
-    CLASS-METHODS read_mara_data
-      CHANGING
-        !ct_matnr      TYPE wrf_ref_pre03_tty
-      RETURNING
-        VALUE(rt_mara) TYPE wrf_mara_tty .
-    CLASS-METHODS read_marc_data
-      CHANGING
-        !ct_matnr_werks TYPE wrf_ref_pre01_tty
-      RETURNING
-        VALUE(rt_marc)  TYPE wrf_ref_marc_tty .
-    CLASS-METHODS read_maw1_data
-      CHANGING
-        !ct_matnr      TYPE wrf_ref_pre03_tty
-      RETURNING
-        VALUE(rt_maw1) TYPE wrf_maw1_tty .
-    CLASS-METHODS read_mvke_data
-      CHANGING
-        !ct_vkorg_vtweg_matnr TYPE pre10_tab
-      RETURNING
-        VALUE(rt_mvke)        TYPE mvke_tt .
-    CLASS-METHODS read_wind_pointer
-      IMPORTING
-        !it_r_appl     TYPE wes_tr_appl
-      RETURNING
-        VALUE(rt_wind) TYPE typ_windvb .
-    CLASS-METHODS read_wlk2_data
-      CHANGING
-        !ct_matnr_vkorg_vtweg_werks TYPE ty_t_pre23
-      RETURNING
-        VALUE(rt_wlk2)              TYPE wlk2_table .
-    CLASS-METHODS set_status_wind_pointer
-      IMPORTING
-        !it_wind_pointer_id TYPE wes_t_wind_id
-        !it_r_appl          TYPE wes_tr_appl .
-    CLASS-METHODS util_salesorg_langauge
-      IMPORTING
-        !iv_vkorg          TYPE vkorg
-      RETURNING
-        VALUE(rv_language) TYPE spras .
-    METHODS effective_price_per_date
-      CHANGING
-        !ct_saco_price TYPE tt_saco .
-    METHODS get_promotion_id
-      IMPORTING
-        !iv_vkorg         TYPE vkorg
-        !iv_vtweg         TYPE vtweg
-        !iv_werks         TYPE werks_d
-        !iv_matnr         TYPE matnr
-        !iv_vrkme         TYPE vrkme
-      RETURNING
-        VALUE(rv_promoid) TYPE waktion .
-    METHODS map_persist_data
-      RETURNING
-        VALUE(rt_prices) TYPE zpos_pricelist_tty .
-    METHODS map_persist_data_per_date
-      IMPORTING
-        !is_saco_price   TYPE item_saco_mapping
-      RETURNING
-        VALUE(rt_prices) TYPE zpos_pricelist_tty .
+  class-methods CALCULATE_NET_PRICE
+    importing
+      !IV_INPUT_PRICE type KBETR
+      !IV_TAX_RATE type KBETR
+    returning
+      value(RV_NET_PRICE) type KBETR .
+  class-methods CREATE_PERSIST_LABEL_DATA
+    importing
+      !IT_ARTICLE type ZPOS_ARTICLE_TTY .
+  class-methods CREATE_STATUS_RECORDS
+    importing
+      !IT_ARTICLE_PRICE type ZPOS_ARTICLE_PRICE_TTY
+      !IT_IDOC_MAP type TY_T_IDOC_MAP optional
+      !IV_STATUS type ZPOS_RECIPIENT_STATUS
+    returning
+      value(RV_COUNT) type SYST_DBCNT
+    raising
+      ZCX_POS_EXCEPTION .
+  class-methods GET_VIKING_TAX_CODE
+    changing
+      !CV_TAX_CODE type MWSKZ .
+  class-methods MAGENTO_PRICING_CHECK
+    changing
+      value(CT_ARTICLE_PRICE) type ZPOS_ARTICLE_PRICE_TTY .
+  class-methods READ_LAYOUT_MODULE
+    importing
+      !IT_R_MATNR type WRF_MATNR_RTTY
+      !IT_R_WERKS type TDT_RG_KUNNR
+    returning
+      value(RT_LAYOUT) type TY_T_LAYOUT .
+  class-methods READ_MARA_DATA
+    changing
+      !CT_MATNR type WRF_REF_PRE03_TTY
+    returning
+      value(RT_MARA) type WRF_MARA_TTY .
+  class-methods READ_MARC_DATA
+    changing
+      !CT_MATNR_WERKS type WRF_REF_PRE01_TTY
+    returning
+      value(RT_MARC) type WRF_REF_MARC_TTY .
+  class-methods READ_MAW1_DATA
+    changing
+      !CT_MATNR type WRF_REF_PRE03_TTY
+    returning
+      value(RT_MAW1) type WRF_MAW1_TTY .
+  class-methods READ_MVKE_DATA
+    changing
+      !CT_VKORG_VTWEG_MATNR type PRE10_TAB
+    returning
+      value(RT_MVKE) type MVKE_TT .
+  class-methods READ_WIND_POINTER
+    importing
+      !IT_R_APPL type WES_TR_APPL
+    returning
+      value(RT_WIND) type TYP_WINDVB .
+  class-methods READ_WLK2_DATA
+    changing
+      !CT_MATNR_VKORG_VTWEG_WERKS type TY_T_PRE23
+    returning
+      value(RT_WLK2) type WLK2_TABLE .
+  class-methods SET_STATUS_WIND_POINTER
+    importing
+      !IT_WIND_POINTER_ID type WES_T_WIND_ID
+      !IT_R_APPL type WES_TR_APPL .
+  methods EFFECTIVE_PRICE_PER_DATE
+    changing
+      !CT_SACO_PRICE type TT_SACO .
+  methods GET_PROMOTION_ID
+    importing
+      !IV_VKORG type VKORG
+      !IV_VTWEG type VTWEG
+      !IV_WERKS type WERKS_D
+      !IV_MATNR type MATNR
+      !IV_VRKME type VRKME
+    returning
+      value(RV_PROMOID) type WAKTION .
+  methods MAP_PERSIST_DATA
+    returning
+      value(RT_PRICES) type ZPOS_PRICELIST_TTY .
+  methods MAP_PERSIST_DATA_PER_DATE
+    importing
+      !IS_SACO_PRICE type ITEM_SACO_MAPPING
+    returning
+      value(RT_PRICES) type ZPOS_PRICELIST_TTY .
 ENDCLASS.
 
 
@@ -266,26 +272,7 @@ ENDCLASS.
 CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
 
 
-  METHOD UTIL_SALESORG_LANGAUGE.
-
-    CASE iv_vkorg.
-      WHEN '9700'.
-        rv_language = 'V'.      "Swedish
-      WHEN '9000'.
-        rv_language = 'K'.      "Danish
-      WHEN '7400'.
-        rv_language = 'O'.      "Norwegian
-      WHEN '6800'.
-        rv_language = 'b'.      "Icenlandic
-      WHEN OTHERS.
-        rv_language = zcl_pos_util=>co_english_language.      "English for all other cases
-
-    ENDCASE.
-
-  ENDMETHOD.
-
-
-  METHOD SET_STATUS_WIND_POINTER.
+  METHOD set_status_wind_pointer.
 
     CHECK it_wind_pointer_id IS NOT INITIAL.
 
@@ -314,7 +301,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD READ_WLK2_DATA.
+  METHOD read_wlk2_data.
 
     CALL FUNCTION 'WLK2_ARRAY_READ'
       TABLES
@@ -330,7 +317,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD READ_WIND_POINTER.
+  METHOD read_wind_pointer.
 *
     DATA: lt_wesd_winds TYPE TABLE OF wesd_winds.
 
@@ -378,7 +365,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD READ_MVKE_DATA.
+  METHOD read_mvke_data.
 
     CALL FUNCTION 'MVKE_ARRAY_READ'
       TABLES
@@ -390,7 +377,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD READ_MAW1_DATA.
+  METHOD read_maw1_data.
 
     CALL FUNCTION 'MAW1_ARRAY_READ'
 *      EXPORTING
@@ -405,7 +392,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD READ_MARC_DATA.
+  METHOD read_marc_data.
 
     CALL FUNCTION 'MARC_ARRAY_READ'
       TABLES
@@ -422,7 +409,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD READ_MARA_DATA.
+  METHOD read_mara_data.
 
     CALL FUNCTION 'MARA_ARRAY_READ'
       TABLES
@@ -435,7 +422,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD READ_LAYOUT_MODULE.
+  METHOD read_layout_module.
 
     SELECT * FROM zposi_layout_module
              INTO TABLE @rt_layout
@@ -452,14 +439,14 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD NEW_PACKAGE_RESET.
+  METHOD new_package_reset.
 
     CLEAR: mt_cond_art, mt_vkp0_gpa1_map, mt_wesout_price.
 
   ENDMETHOD.
 
 
-  METHOD MAP_PERSIST_DATA_PER_DATE.
+  METHOD map_persist_data_per_date.
 
 * Sort for binary search
     SORT mt_wesout_price BY matnr kmein vkorg vtweg werks.
@@ -545,7 +532,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD MAP_PERSIST_DATA.
+  METHOD map_persist_data.
 
 * This mapping does not really make much sense anymore
 * It was mapped to conform to the persistent data table structure
@@ -602,7 +589,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD MAGENTO_PRICING_CHECK.
+  METHOD magento_pricing_check.
 
 * Checking whether the article has already been sent to magento
 * before sending the pricing - this check can be deactivated
@@ -637,11 +624,11 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD GET_VIKING_TAX_CODE.
+  METHOD get_viking_tax_code.
   ENDMETHOD.
 
 
-  METHOD GET_PROMOTION_ID.
+  METHOD get_promotion_id.
 
     READ TABLE mt_cond_art WITH KEY
                                vkorg = iv_vkorg
@@ -660,7 +647,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD GET_ARTICLE_PRICES.
+  METHOD get_article_prices.
 
     DATA: lt_r_knumh    TYPE RANGE OF knumh,
           lt_eff_scales TYPE STANDARD TABLE OF konm,
@@ -714,7 +701,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD GET_ARTICLE_PRICELIST.
+  METHOD get_article_pricelist.
 
     DATA: lt_r_knumh       TYPE RANGE OF knumh,
           lt_scale         TYPE SORTED TABLE OF konm WITH UNIQUE KEY knumh kopos klfn1,
@@ -722,7 +709,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
           lr_config_map    TYPE REF TO zcl_pos_config_tab_hanlder.
 
     IF lr_config_map IS INITIAL.
-      lr_config_map = NEW #( iv_vkorg ).
+      lr_config_map = NEW #( iv_vkorg = iv_vkorg ).
     ENDIF.
 
 * The main purpose is to join the key tables together and calculate some columns
@@ -895,7 +882,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD EFFECTIVE_PRICE_PER_DATE.
+  METHOD effective_price_per_date.
 
     DATA:
       ls_lowest_price   TYPE saco,
@@ -970,7 +957,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD DETERMINE_EFFECTIVE_PRICE.
+  METHOD determine_effective_price.
 
     DATA:
       lt_input_price  TYPE tt_saco,
@@ -1014,7 +1001,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD DELETE_ARTICLE_PRICE_DATA.
+  METHOD delete_article_price_data.
 
     DATA: lv_timestamp TYPE hdb_timestamp.
 
@@ -1148,7 +1135,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD CREATE_STATUS_RECORDS.
+  METHOD create_status_records.
 
     DATA: lt_artprice_sts TYPE zpos_artprc_sts_tty.
     DATA(lv_timestamp) = sy-datum && sy-uzeit.
@@ -1187,7 +1174,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD CREATE_PERSIST_PRICE_DATA.
+  METHOD create_persist_price_data.
 
 *---------------------------------------------------------------*
     DATA: lt_zwso_price    TYPE STANDARD TABLE OF ty_zwso_price,
@@ -1524,7 +1511,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD CREATE_PERSIST_LABEL_DATA.
+  METHOD create_persist_label_data.
 
     DATA: lt_shelf_label TYPE STANDARD TABLE OF zpos_shelf_lbl.
 
@@ -1543,7 +1530,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD CREATE_PERSIST_ARTICLE_DATA.
+  METHOD create_persist_article_data.
 
 * TODO -----> LAYOUT_MODULE  ---> MALG-LAYGR
 
@@ -1731,7 +1718,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
 *=============================================================================================================
 * Description Texts
 *=============================================================================================================
-          DATA(lv_language) = util_salesorg_langauge( ls_package-vkorg ).
+          DATA(lv_language) = zcl_pos_util=>get_language_by_salesorg( ls_package-vkorg ).
 
 
           TRY.
@@ -1959,7 +1946,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD CREATE_OUTBOUND_ARTICLE_IDOC.
+  METHOD create_outbound_article_idoc.
 
 
     DATA: lt_edidd        TYPE STANDARD TABLE OF edidd,
@@ -1982,7 +1969,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
     DATA: ls_edids TYPE edids,
           lv_subrc TYPE sysubrc.
 
-    mo_config_map = NEW #( iv_vkorg ).
+    mo_config_map = NEW #( iv_vkorg = iv_vkorg ).
 
     SELECT vkorg, land1 FROM t001w INTO TABLE @DATA(lt_country) WHERE vkorg = @iv_vkorg.
 
@@ -2084,6 +2071,10 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
         ls_idoc_data-segnum = lv_segnum.
 
         MOVE-CORRESPONDING <ls_article_price> TO ls_idoc_article.       " This should move just about everything
+
+        IF ls_article_price-pos_recipient = zcl_pos_util=>co_pos_recipient-magento_idoc.
+          ls_idoc_article-offer_id = <ls_article_price>-eff_price_fkey.       "For Magento Price Integration the KNUMH key for the Effective price should be the "offerID"
+        ENDIF.
 
 
 *------------------------------- WEBSITE DATA ------------------------------------
@@ -2242,7 +2233,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD CREATE_CONDITION_RECORD.
+  METHOD create_condition_record.
 
 * Change this value in debugging if you want the IDocs to be persisted. Perhaps a User Parameter would be better!
     DATA: lv_idoc_test TYPE boole_d VALUE abap_false.
@@ -2598,7 +2589,7 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD COPY_ARTICLE_STATUS_DATA.
+  METHOD copy_article_status_data.
 
     DATA: lt_persist_price TYPE zpos_pricelist_tty,
           lt_artprc_status TYPE STANDARD TABLE OF zpos_artprc_sts.
@@ -2658,23 +2649,48 @@ CLASS ZCL_POS_WSO_ARTICLE_PRICE IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD CONSTRUCTOR.
+  METHOD constructor.
 
   ENDMETHOD.
 
 
-  METHOD CALCULATE_NET_PRICE.
+  METHOD calculate_net_price.
 
     rv_net_price = iv_input_price / ( 1 + abs( iv_tax_rate / 100 ) ).
 
   ENDMETHOD.
 
 
-  METHOD APPEND_WESOUT_PRICE.
+  METHOD append_wesout_price.
 
     APPEND INITIAL LINE TO mt_wesout_price ASSIGNING FIELD-SYMBOL(<ls_wesout_price>).
     MOVE-CORRESPONDING is_price TO <ls_wesout_price>.
     <ls_wesout_price>-werks = iv_werks.
+
+  ENDMETHOD.
+
+
+  METHOD get_article_price.
+
+    SELECT SINGLE vkorg, vtweg, werks, matnr, ean11, vrkme, datbi, datab,
+                  eff_price, std_price, comp_qty, comp_uom, net_contents, is_promo_price,
+                  currency
+       FROM zposi_article_price
+       INTO CORRESPONDING FIELDS OF @rs_pricelist
+       WHERE vkorg = @iv_vkorg
+       AND   vtweg = @iv_vtweg
+       AND   werks = @iv_werks
+       AND   matnr = @iv_matnr
+       AND   ean11 = @iv_ean11
+       AND   datab <= @iv_valid_from
+       AND   datbi >= @iv_valid_to.
+
+*=====================================
+* Effective Pricing --> Comparative Price
+*=====================================
+    IF NOT rs_pricelist-net_contents IS INITIAL.
+      rs_pricelist-eff_comp_price = ( rs_pricelist-eff_price * ( rs_pricelist-comp_qty ) / rs_pricelist-net_contents ).
+    ENDIF.
 
   ENDMETHOD.
 ENDCLASS.

@@ -66,6 +66,7 @@ SELECTION-SCREEN BEGIN OF SCREEN 9011 AS SUBSCREEN.
 
     PARAMETERS: p_vkorg TYPE vkorg NO-DISPLAY.
     PARAMETERS: p_curr  TYPE waers NO-DISPLAY.
+    PARAMETERS: p_werks TYPE werks_d NO-DISPLAY.
 
     SELECT-OPTIONS: s_vbeln    FOR  gv_vbeln.
     SELECT-OPTIONS: s_date1    FOR  gv_date.
@@ -137,10 +138,13 @@ AT SELECTION-SCREEN OUTPUT.
 
   GET PARAMETER ID 'VKO' FIELD p_vkorg.
   GET PARAMETER ID 'CUR' FIELD p_curr.
+  GET PARAMETER ID 'WRK' FIELD p_werks.
 
-  APPEND INITIAL LINE TO s_store ASSIGNING FIELD-SYMBOL(<ls_store>).
-  <ls_store>-sign = 'I'.
-  <ls_store>-option = 'EQ'.
-  GET PARAMETER ID 'WRK' FIELD <ls_store>-low.
+  IF NOT p_werks IS INITIAL.
+    APPEND INITIAL LINE TO s_store ASSIGNING FIELD-SYMBOL(<ls_store>).
+    <ls_store>-sign = zcl_pos_util=>co_selopt_sign_i.
+    <ls_store>-option = zcl_pos_util=>co_selopt_opt_eq.
+    <ls_store>-low = p_werks.
+  ENDIF.
 
   SET CURSOR FIELD 'P_BCODE' OFFSET 0.

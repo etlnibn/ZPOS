@@ -34,8 +34,11 @@ MODULE user_command_9000 INPUT.
 
           gv_pick_line = 1.         " There is a reason to fill this
           PERFORM header_detail_refresh USING gv_pick_line.
-
-          CALL SCREEN 9101.
+          IF gt_invoice_header IS INITIAL.
+            MESSAGE TEXT-s03 TYPE 'I'.
+          ELSE.
+            CALL SCREEN 9101.
+          ENDIF.
 
         ENDIF.
 

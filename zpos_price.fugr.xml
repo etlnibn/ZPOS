@@ -4,6 +4,7 @@
   <asx:values>
    <AREAT>POS Integration - Price Related Funcs</AREAT>
    <INCLUDES>
+    <SOBJ_NAME>LZPOS_PRICETOP</SOBJ_NAME>
     <SOBJ_NAME>SAPLZPOS_PRICE</SOBJ_NAME>
    </INCLUDES>
    <FUNCTIONS>
@@ -13,21 +14,18 @@
      <IMPORT>
       <RSIMP>
        <PARAMETER>IV_VTWEG</PARAMETER>
-       <DEFAULT>&apos;90&apos;</DEFAULT>
        <OPTIONAL>X</OPTIONAL>
        <REFERENCE>X</REFERENCE>
        <TYP>VTWEG</TYP>
       </RSIMP>
       <RSIMP>
        <PARAMETER>IV_VKORG</PARAMETER>
-       <DEFAULT>&apos;1090&apos;</DEFAULT>
        <OPTIONAL>X</OPTIONAL>
        <REFERENCE>X</REFERENCE>
        <TYP>VKORG</TYP>
       </RSIMP>
       <RSIMP>
        <PARAMETER>IV_WERKS</PARAMETER>
-       <DEFAULT>&apos;C003&apos;</DEFAULT>
        <OPTIONAL>X</OPTIONAL>
        <REFERENCE>X</REFERENCE>
        <TYP>WERKS_D</TYP>
@@ -40,7 +38,6 @@
       </RSIMP>
       <RSIMP>
        <PARAMETER>IV_CURRENCY</PARAMETER>
-       <DEFAULT>&apos;EUR&apos;</DEFAULT>
        <OPTIONAL>X</OPTIONAL>
        <REFERENCE>X</REFERENCE>
        <TYP>WAERS</TYP>
@@ -50,12 +47,17 @@
        <REFERENCE>X</REFERENCE>
        <TYP>ZPOS_ORDER_LINE_TTY</TYP>
       </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_R_AKTNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FIP_T_AKTRN_RANGE</TYP>
+      </RSIMP>
      </IMPORT>
      <EXPORT>
       <RSEXP>
        <PARAMETER>ET_PRICED_ORDER</PARAMETER>
        <REFERENCE>X</REFERENCE>
-       <TYP>ZPOS_BBY_ORDER_TOTAL_TTY</TYP>
+       <TYP>ZPOS_BBY_TOTAL_TTY</TYP>
       </RSEXP>
       <RSEXP>
        <PARAMETER>ET_OPEN_ORDER</PARAMETER>
@@ -93,6 +95,11 @@
        <PARAMETER>IT_SALES_ORDER</PARAMETER>
        <KIND>P</KIND>
        <STEXT>POS - Order Line - Table Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_R_AKTNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Range: Promotion</STEXT>
       </RSFDO>
       <RSFDO>
        <PARAMETER>ET_PRICED_ORDER</PARAMETER>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ARRAY_OFSTRING</OBJ_NAME>
+     <OBJECT_M>INTF</OBJECT_M>
+     <OBJ_NAME_M>ZXI_II_SI_IS_MAGENTO_FIND_CUST</OBJ_NAME_M>
+     <HASH_ID>96E5231CA9AAB9F2633596849BAEE9D220C054D9</HASH_ID>
+     <ID>&lt;type&gt; ArrayOfstring http://schemas.microsoft.com/2003/10/Serialization/Arrays SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ArrayOfstring</IFR_NAME>
+     <IFR_NSPCE>http://schemas.microsoft.com/2003/10/Serialization/Arrays</IFR_NSPCE>
+     <IFR_GNSPCE>SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>ZXI_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://schemas.microsoft.com/2003/10/Serialization/Arrays</X-ML_NSPCE>
+     <X-ML_NAME>ArrayOfstring</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ARRAY_OFSTRING</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>STRING</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>STRING</OBJ_NAME2>
+     <OBJECT_R>TTYP</OBJECT_R>
+     <OBJ_NAME_R>ZXI_STRING_TAB</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://schemas.microsoft.com/2003/10/Serialization/Arrays}string &lt;type&gt; ArrayOfstring http://schemas.microsoft.com/2003/10/Serialization/Arrays SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>string</IFR_NAME>
+     <IFR_TAGTYP>L</IFR_TAGTYP>
+     <IFR_MAXOCC>65535</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_NILLABLE>X</IFR_NILLABLE>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>STRING</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ARRAY_OFSTRING</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZXI_ARRAY_OFSTRING</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZXI_ARRAY_OFSTRING</OBJ_NAME2>
+     <ID>&lt;type&gt; ArrayOfstring http://schemas.microsoft.com/2003/10/Serialization/Arrays SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ArrayOfstring</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZXI_ARRAY_OFSTRING</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

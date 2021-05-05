@@ -38,6 +38,18 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CLSNAME>ZCL_POS_UTIL</CLSNAME>
+     <CMPNAME>GET_LANGUAGE_BY_COUNTRY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the language code for a Country</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_UTIL</CLSNAME>
+     <CMPNAME>GET_LANGUAGE_BY_SALESORG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the language code for a Sales Org</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_UTIL</CLSNAME>
      <CMPNAME>REMOVE_DEC_SEPARATOR</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Remove decimal separators from quantity fields</DESCRIPT>

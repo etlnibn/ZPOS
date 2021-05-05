@@ -720,6 +720,15 @@ CLASS ZCL_POS_ARTICLE_API IMPLEMENTATION.
       APPEND ls_custom_attr TO ls_article-product-custom_attributes.
     ENDIF.
 
+
+* Sending the Effective Price KNUMH value as the "offerID"
+    IF iv_bundle = abap_false.
+      ls_custom_attr-attribute_code = 'used_offerid '.
+      ls_custom_attr-value = is_article_price-eff_price_fkey.
+      APPEND ls_custom_attr TO ls_article-product-custom_attributes.
+    ENDIF.
+
+
     rv_body = /ui2/cl_json=>serialize( data = ls_article compress = abap_true pretty_name = /ui2/cl_json=>pretty_mode-low_case ).
 
 * Problem with Initial Values being removed in the conversion to JSON - the compress = abap_false option does not solve the problem

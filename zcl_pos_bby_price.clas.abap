@@ -13,7 +13,7 @@ public section.
       !IV_PRICE_DATE type DATS
       !IV_CURRENCY type WAERS
       !IT_SALES_ORDER type ZPOS_ORDER_LINE_TTY
-      !IT_R_AKTNR type FIP_T_AKTRN_RANGE
+      !IT_R_AKTNR type FIP_T_AKTRN_RANGE optional
     exporting
       value(ET_PRICED_ORDER) type ZPOS_BBY_TOTAL_TTY
       value(ET_OPEN_ORDER) type ZPOS_ORDER_LINE_TTY .

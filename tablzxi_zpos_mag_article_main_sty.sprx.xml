@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>ZXI_CO_SI_OS_MAGENTO_PRODUCT_E</OBJ_NAME_M>
+     <HASH_ID>69D413B8C269693E3C758F532BEA3248D000B90C</HASH_ID>
+     <ID>&lt;type&gt; ZPOS_MAG_ARTICLE_MAIN_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ZPOS_MAG_ARTICLE_MAIN_STY</IFR_NAME>
+     <IFR_GNSPCE>SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>ZXI_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NAME>ZPOS_MAG_ARTICLE_MAIN_STY</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ATTRIBUTE_SET_ID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ATTRIBUTE_SET_ID</OBJ_NAME2>
+     <ID>&lt;element&gt; attribute_set_id &lt;type&gt; ZPOS_MAG_ARTICLE_MAIN_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>attribute_set_id</IFR_NAME>
+     <IFR_TEXT>POS - Magento Attribute Set ID</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>3</IFR_MAXLEN>
+     <IFR_PATTRN>\d+</IFR_PATTRN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ATTRIBUTE_SET_ID</R3_NAME>
+     <R3_TEXT>POS - Magento Attribute Set ID</R3_TEXT>
+     <R3_DATATYP>NUMC</R3_DATATYP>
+     <R3_LENGTH>000003</R3_LENGTH>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>CUSTOM_ATTRIBUTES</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>CUSTOM_ATTRIBUTES</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>ZXI_ZPOS_MAG_CUST_ATTR_TTY</OBJ_NAME_R>
+     <ID>&lt;element&gt; custom_attributes &lt;type&gt; ZPOS_MAG_ARTICLE_MAIN_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>custom_attributes</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>CUSTOM_ATTRIBUTES</R3_NAME>
+     <R3_SEQNUM>000010</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>EXTENSION_ATTRIBUTES</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>EXTENSION_ATTRIBUTES</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>ZXI_ZPOS_MAG_EXT_ATTR_STY</OBJ_NAME_R>
+     <ID>&lt;element&gt; extension_attributes &lt;type&gt; ZPOS_MAG_ARTICLE_MAIN_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>extension_attributes</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>EXTENSION_ATTRIBUTES</R3_NAME>
+     <R3_SEQNUM>000009</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>NAME</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>NAME</OBJ_NAME2>
+     <ID>&lt;element&gt; name &lt;type&gt; ZPOS_MAG_ARTICLE_MAIN_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>name</IFR_NAME>
+     <IFR_TEXT>Material Description</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>40</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>NAME</R3_NAME>
+     <R3_TEXT>Material Description</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000040</R3_LENGTH>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>PRICE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>PRICE</OBJ_NAME2>
+     <ID>&lt;element&gt; price &lt;type&gt; ZPOS_MAG_ARTICLE_MAIN_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>price</IFR_NAME>
+     <IFR_TEXT>Condition Amount or Percentage</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>11</IFR_PREC>
+     <IFR_SCALE>2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>PRICE</R3_NAME>
+     <R3_TEXT>Condition Amount or Percentage</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000013</R3_LENGTH>
+     <R3_DECIMAL>000002</R3_DECIMAL>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>SKU</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>SKU</OBJ_NAME2>
+     <ID>&lt;element&gt; sku &lt;type&gt; ZPOS_MAG_ARTICLE_MAIN_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>sku</IFR_NAME>
+     <IFR_TEXT>Material Number</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>40</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>SKU</R3_NAME>
+     <R3_TEXT>Material Number</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000040</R3_LENGTH>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>STATUS</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>STATUS</OBJ_NAME2>
+     <ID>&lt;element&gt; status &lt;type&gt; ZPOS_MAG_ARTICLE_MAIN_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>status</IFR_NAME>
+     <IFR_TEXT>Integer 1</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>unsignedByte</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>STATUS</R3_NAME>
+     <R3_TEXT>Integer 1</R3_TEXT>
+     <R3_DATATYP>INT1</R3_DATATYP>
+     <R3_SEQNUM>000005</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>TYPE_ID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>TYPE_ID</OBJ_NAME2>
+     <ID>&lt;element&gt; type_id &lt;type&gt; ZPOS_MAG_ARTICLE_MAIN_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>type_id</IFR_NAME>
+     <IFR_TEXT>Character Field with Length 10</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>10</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>TYPE_ID</R3_NAME>
+     <R3_TEXT>Character Field with Length 10</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000010</R3_LENGTH>
+     <R3_SEQNUM>000007</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>VISIBILITY</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>VISIBILITY</OBJ_NAME2>
+     <ID>&lt;element&gt; visibility &lt;type&gt; ZPOS_MAG_ARTICLE_MAIN_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>visibility</IFR_NAME>
+     <IFR_TEXT>Integer 1</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>unsignedByte</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>VISIBILITY</R3_NAME>
+     <R3_TEXT>Integer 1</R3_TEXT>
+     <R3_DATATYP>INT1</R3_DATATYP>
+     <R3_SEQNUM>000006</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>WEIGHT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>WEIGHT</OBJ_NAME2>
+     <ID>&lt;element&gt; weight &lt;type&gt; ZPOS_MAG_ARTICLE_MAIN_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>weight</IFR_NAME>
+     <IFR_TEXT>Gross weight</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>13</IFR_PREC>
+     <IFR_SCALE>3</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>WEIGHT</R3_NAME>
+     <R3_TEXT>Gross weight</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000016</R3_LENGTH>
+     <R3_DECIMAL>000003</R3_DECIMAL>
+     <R3_SEQNUM>000008</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME2>
+     <ID>&lt;type&gt; ZPOS_MAG_ARTICLE_MAIN_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ZPOS_MAG_ARTICLE_MAIN_STY</IFR_NAME>
+     <IFR_TEXT>Magento Product API - PUT Structure - Main Attributes</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</R3_NAME>
+     <R3_TEXT>Magento Product API - PUT Structure - Main Attributes</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

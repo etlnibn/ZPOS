@@ -118,7 +118,7 @@ define view ZPOSI_ARTICLE_PRICE_STATUS
       case
        when price.offer_id       is not initial then price.offer_id
        when price.offer_id_dsc   is not initial then price.offer_id_dsc
-       else concat('KNUMH-', price.eff_price_fkey)
+       else ''
       end                         as offer_id,
 
       status.pos_recipient        as pos_recipient,

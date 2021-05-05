@@ -29,6 +29,7 @@ public section.
         bundle   TYPE char1 VALUE 'B',
         websites TYPE char1 VALUE 'W',
         shipment TYPE char1 VALUE 'S',
+        invoice  type char1 value 'I',
       END OF co_endpoint .
   class-data:
     BEGIN OF co_http_operation,
@@ -124,6 +125,9 @@ CLASS ZCL_POS_MAGENTO_REST_API IMPLEMENTATION.
         CONCATENATE 'V1/products/' iv_data '/websites' INTO rv_url.
       WHEN co_endpoint-shipment.                                                    " Shipping Notification
         CONCATENATE 'V1/order/' iv_data '/ship' INTO rv_url.
+      WHEN co_endpoint-invoice.                                                     " Invoice & Capture
+        CONCATENATE 'V1/order/' iv_data '/invoice' INTO rv_url.
+
     ENDCASE.
 
   ENDMETHOD.

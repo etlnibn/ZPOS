@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_MT_BILLING_NOTIFICATION_RE</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>ZXI_MT_BILLING_NOTIFICATION_RE</OBJ_NAME_M>
+     <HASH_ID>9F8D4C64ED39A8A08E2FD9B20180573641D3F085</HASH_ID>
+     <ID>&lt;message&gt; MT_Billing_Notification_Response urn:bahag:S4N:Magento urn:bahag:S4N:Magento</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>MT_Billing_Notification_Response</IFR_NAME>
+     <IFR_NSPCE>urn:bahag:S4N:Magento</IFR_NSPCE>
+     <IFR_GNSPCE>urn:bahag:S4N:Magento</IFR_GNSPCE>
+     <GEN_VERS>0006</GEN_VERS>
+     <PREFIX>ZXI_</PREFIX>
+     <CATEGORY>ifmmessage</CATEGORY>
+     <X-ML_NSPCE>urn:bahag:S4N:Magento</X-ML_NSPCE>
+     <X-ML_NAME>MT_Billing_Notification_Response</X-ML_NAME>
+     <VERSION_ID>6d68b47ea80611ebb0ba00000a54dd5a</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_MT_BILLING_NOTIFICATION_RE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>MT_BILLING_NOTIFICATION_RESPON</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>MT_BILLING_NOTIFICATION_RESPON</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>ZXI_DT_BILLING_NOTIFICATION_RE</OBJ_NAME_R>
+     <ID>&lt;part&gt; MT_Billing_Notification_Response &lt;message&gt; MT_Billing_Notification_Response urn:bahag:S4N:Magento urn:bahag:S4N:Magento</ID>
+     <IFR_TYPE>part</IFR_TYPE>
+     <IFR_NAME>MT_Billing_Notification_Response</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>MT_BILLING_NOTIFICATION_RESPON</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_MT_BILLING_NOTIFICATION_RE</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZXI_MT_BILLING_NOTIFICATION_RE</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZXI_MT_BILLING_NOTIFICATION_RE</OBJ_NAME2>
+     <ID>&lt;message&gt; MT_Billing_Notification_Response urn:bahag:S4N:Magento urn:bahag:S4N:Magento</ID>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>MT_Billing_Notification_Response</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZXI_MT_BILLING_NOTIFICATION_RE</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmmessage</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

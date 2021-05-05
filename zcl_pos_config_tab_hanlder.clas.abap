@@ -1,59 +1,62 @@
-class ZCL_POS_CONFIG_TAB_HANLDER definition
-  public
-  final
-  create public .
+CLASS zcl_pos_config_tab_hanlder DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
+  PUBLIC SECTION.
 
-  methods CONSTRUCTOR
-    importing
-      !IV_VKORG type VKORG .
-  class-methods DELETE_ALL_ENTRIES .
-  class-methods INSERT_ENTRIES
-    importing
-      !IT_TABLE type ZPOS_CONFIG_MAP_TTY .
-  methods IS_SET_DISCOUNT_ACTIVE
-    returning
-      value(RV_ACTIVE) type ABAP_BOOL .
-  methods IS_PRICE_EXTRA_SCALES_ACTIVE
-    returning
-      value(RV_ACTIVE) type ABAP_BOOL .
-  methods IS_MAGENTO_PRICE_CHECK_ACTIVE
-    returning
-      value(RV_ACTIVE) type ABAP_BOOL .
-  methods IS_OFFER_EXTRA_SCALES_ACTIVE
-    returning
-      value(RV_ACTIVE) type ABAP_BOOL .
-  methods IS_DISCGROUP_ACTIVE
-    returning
-      value(RV_ACTIVE) type ABAP_BOOL .
-  methods GET_VK_TAX_CODE
-    importing
-      !IV_SOURCE2 type ZPOS_SOURCE2
-    returning
-      value(RV_TAX_CODE) type MWSKZ
-    raising
-      ZCX_POS_EXCEPTION .
+    METHODS constructor
+      IMPORTING
+        !iv_vkorg   TYPE vkorg OPTIONAL
+        !iv_country TYPE land1 OPTIONAL
+      RAISING
+        zcx_pos_exception .
+    CLASS-METHODS delete_all_entries .
+    CLASS-METHODS insert_entries
+      IMPORTING
+        !it_table TYPE zpos_config_map_tty .
+    METHODS is_set_discount_active
+      RETURNING
+        VALUE(rv_active) TYPE abap_bool .
+    METHODS is_price_extra_scales_active
+      RETURNING
+        VALUE(rv_active) TYPE abap_bool .
+    METHODS is_magento_price_check_active
+      RETURNING
+        VALUE(rv_active) TYPE abap_bool .
+    METHODS is_offer_extra_scales_active
+      RETURNING
+        VALUE(rv_active) TYPE abap_bool .
+    METHODS is_discgroup_active
+      RETURNING
+        VALUE(rv_active) TYPE abap_bool .
+    METHODS get_vk_tax_code
+      IMPORTING
+        !iv_source2        TYPE zpos_source2
+      RETURNING
+        VALUE(rv_tax_code) TYPE mwskz
+      RAISING
+        zcx_pos_exception .
   PROTECTED SECTION.
 *"* protected components of class ZCL_POS_MAP_TAB1_HANDLER
 *"* do not include other source files here!!!
-private section.
+  PRIVATE SECTION.
 
-  constants CO_ACTIVE type ZPOS_SOURCE1 value 'ACTIVE' ##NO_TEXT.
-  constants CO_DSR type ZPOS_GRPID value 'ZDSR' ##NO_TEXT.
-  constants CO_DUMMY type ZPOS_SOURCE1 value 'DUMMY' ##NO_TEXT.
-  data MS_TABLE_LINE type ZPOS_CONFIG_MAP_STY .
-  data MT_TABLE type ZPOS_CONFIG_MAP_TTY .
-  data MV_SELECTION_STRING type STRING .
+    CONSTANTS co_active TYPE zpos_source1 VALUE 'ACTIVE' ##NO_TEXT.
+    CONSTANTS co_dsr TYPE zpos_grpid VALUE 'ZDSR' ##NO_TEXT.
+    CONSTANTS co_dummy TYPE zpos_source1 VALUE 'DUMMY' ##NO_TEXT.
+    DATA ms_table_line TYPE zpos_config_map_sty .
+    DATA mt_table TYPE zpos_config_map_tty .
+    DATA mv_selection_string TYPE string .
 
-  methods IS_ACTIVE
-    importing
-      !IV_GROUPID type ZPOS_GRPID
-      !IV_SOURCEVAL1 type ZPOS_SOURCE1 optional
-      !IV_SOURCEVAL2 type ZPOS_SOURCE2 optional
-      !IV_SOURCEVAL3 type ZPOS_SOURCE3 optional
-    returning
-      value(RV_ACTIVE) type BOOLE_D .
+    METHODS is_active
+      IMPORTING
+        !iv_groupid      TYPE zpos_grpid
+        !iv_sourceval1   TYPE zpos_source1 OPTIONAL
+        !iv_sourceval2   TYPE zpos_source2 OPTIONAL
+        !iv_sourceval3   TYPE zpos_source3 OPTIONAL
+      RETURNING
+        VALUE(rv_active) TYPE boole_d .
 *"* private components of class ZCL_POS_CONFIG_TAB_HANDLER
 *"* do not include other source files here!!!
 ENDCLASS.
@@ -68,6 +71,22 @@ CLASS ZCL_POS_CONFIG_TAB_HANLDER IMPLEMENTATION.
     DATA:          lt_salesorg   TYPE vkorg_ran_itab.
     FIELD-SYMBOLS: <ls_table_line> TYPE zpos_config_map_sty.
 
+    IF iv_vkorg IS INITIAL AND iv_country IS INITIAL.
+      RAISE EXCEPTION TYPE zcx_pos_exception MESSAGE e009(zpos) WITH cl_abap_classdescr=>get_class_name( me ).
+    ENDIF.
+
+    DATA(lv_vkorg) = iv_vkorg.
+
+    IF NOT iv_country IS INITIAL.
+
+      SELECT SINGLE vkorg FROM t001w INTO lv_vkorg WHERE land1 = iv_country.
+
+      IF sy-subrc <> 0.
+        RAISE EXCEPTION TYPE zcx_pos_exception MESSAGE e012(zpos) WITH iv_country.
+      ENDIF.
+
+    ENDIF.
+
 *==========================================================================================
 * All entries where the full profile match the table entries
 *==========================================================================================
@@ -75,7 +94,7 @@ CLASS ZCL_POS_CONFIG_TAB_HANLDER IMPLEMENTATION.
 
     <ls_r_salesorg>-sign   = zcl_pos_util=>co_selopt_sign_i."'I'.
     <ls_r_salesorg>-option = zcl_pos_util=>co_selopt_opt_eq."'EQ'.
-    <ls_r_salesorg>-low = iv_vkorg.
+    <ls_r_salesorg>-low = lv_vkorg.
 
 *==========================================================================================
 * All entries where the vkorg is blank should also be included.
@@ -104,7 +123,7 @@ CLASS ZCL_POS_CONFIG_TAB_HANLDER IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD DELETE_ALL_ENTRIES.
+  METHOD delete_all_entries.
 * This method removes all entries from the table zdta_config_map.
 * Currently this is only used in the generic upload programme.
     DELETE FROM zpos_config_map.
@@ -133,13 +152,13 @@ CLASS ZCL_POS_CONFIG_TAB_HANLDER IMPLEMENTATION.
         rv_tax_code = ls_table_line-targetval.
       ENDIF.
     ELSE.
-      RAISE EXCEPTION TYPE zcx_pos_exception MESSAGE e042(zpos) with iv_source2.
+      RAISE EXCEPTION TYPE zcx_pos_exception MESSAGE e042(zpos) WITH iv_source2.
     ENDIF.
 
   ENDMETHOD.
 
 
-  METHOD INSERT_ENTRIES.
+  METHOD insert_entries.
 
 * This method is used to populate the zpos_config_map table and is currently only used in the generic upload programme.
 * The method receives a table of entries which are inserted into the DB table.
@@ -198,7 +217,7 @@ CLASS ZCL_POS_CONFIG_TAB_HANLDER IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD IS_SET_DISCOUNT_ACTIVE.
+  METHOD is_set_discount_active.
 
 * Used to determine if the setting <SetDiscount>1</SetDiscount> should be active for a Sales Org e.g. Sweden
 
@@ -225,7 +244,7 @@ CLASS ZCL_POS_CONFIG_TAB_HANLDER IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD IS_OFFER_EXTRA_SCALES_ACTIVE.
+  METHOD is_offer_extra_scales_active.
 
 * There may be situations where the generation of extra pricing scales is useful
 * Input  --> 3 = 200, 6 = 350
@@ -239,7 +258,7 @@ CLASS ZCL_POS_CONFIG_TAB_HANLDER IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD IS_PRICE_EXTRA_SCALES_ACTIVE.
+  METHOD is_price_extra_scales_active.
 
 * There may be situations where the generation of extra pricing scales is useful
 * Input  --> 3 = 200, 6 = 350

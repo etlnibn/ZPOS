@@ -408,6 +408,7 @@
        <VISLENGTH>006</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <CONV_EXIT>ALPHA</CONV_EXIT>
        <OUTPUT_FLD>X</OUTPUT_FLD>
        <REQU_ENTRY>N</REQU_ENTRY>
       </RPY_DYFATC>
@@ -4636,8 +4637,8 @@
     <item>
      <ID>I</ID>
      <KEY>S03</KEY>
-     <ENTRY>Receipt Not Found - Check Search Criteria</ENTRY>
-     <LENGTH>50</LENGTH>
+     <ENTRY>No Receipts / Invoices Found - Check Search Criteria</ENTRY>
+     <LENGTH>52</LENGTH>
     </item>
     <item>
      <ID>I</ID>

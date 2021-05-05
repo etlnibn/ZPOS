@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZXI_CL_SI_IS_MAGENTO_BUSINESS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Generated test implementation</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>P</RSTAT>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZXI_CL_SI_IS_MAGENTO_BUSINESS</CLSNAME>
+     <CMPNAME>ATTACH_DOCUMENT_BP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Attaches the incoming documents to the BP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZXI_CL_SI_IS_MAGENTO_BUSINESS</CLSNAME>
+     <CMPNAME>B2B_PARTNER_MAPPING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handles the Mapping of the Inbound Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZXI_CL_SI_IS_MAGENTO_BUSINESS</CLSNAME>
+     <CMPNAME>CONTACT_PARTNER_MAPPING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handles the Mapping of the Contact Person</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZXI_CL_SI_IS_MAGENTO_BUSINESS</CLSNAME>
+     <CMPNAME>CREATE_BUSINESS_PARTNER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates the Business Partner</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZXI_CL_SI_IS_MAGENTO_BUSINESS</CLSNAME>
+     <CMPNAME>CREATE_CREDIT_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates the Credit Management Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZXI_CL_SI_IS_MAGENTO_BUSINESS</CLSNAME>
+     <CMPNAME>MR_CONFIG_MAP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Description</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

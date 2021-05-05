@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_CUSTOMER_ENTRY</OBJ_NAME>
+     <OBJECT_M>INTF</OBJECT_M>
+     <OBJ_NAME_M>ZXI_II_SI_IS_MAGENTO_FIND_CUST</OBJ_NAME_M>
+     <HASH_ID>9645AA859D61AD552F1D80DA034DF0E19F09CBE8</HASH_ID>
+     <ID>&lt;type&gt; CustomerEntry http://bauhaus.net/webshopb2bwebservice SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>CustomerEntry</IFR_NAME>
+     <IFR_NSPCE>http://bauhaus.net/webshopb2bwebservice</IFR_NSPCE>
+     <IFR_GNSPCE>SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>ZXI_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://bauhaus.net/webshopb2bwebservice</X-ML_NSPCE>
+     <X-ML_NAME>CustomerEntry</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_CUSTOMER_ENTRY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>CUSTOMER_ID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>CUSTOMER_ID</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bauhaus.net/webshopb2bwebservice}CustomerId &lt;type&gt; CustomerEntry http://bauhaus.net/webshopb2bwebservice SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>CustomerId</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_NILLABLE>X</IFR_NILLABLE>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>CUSTOMER_ID</R3_NAME>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_CUSTOMER_ENTRY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>CUSTOMER_NAME</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>CUSTOMER_NAME</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bauhaus.net/webshopb2bwebservice}CustomerName &lt;type&gt; CustomerEntry http://bauhaus.net/webshopb2bwebservice SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>CustomerName</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_NILLABLE>X</IFR_NILLABLE>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>CUSTOMER_NAME</R3_NAME>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_CUSTOMER_ENTRY</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZXI_CUSTOMER_ENTRY</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZXI_CUSTOMER_ENTRY</OBJ_NAME2>
+     <ID>&lt;type&gt; CustomerEntry http://bauhaus.net/webshopb2bwebservice SI_IS_Magento_FindCustomerInfo(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>CustomerEntry</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZXI_CUSTOMER_ENTRY</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

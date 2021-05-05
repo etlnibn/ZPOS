@@ -75,7 +75,7 @@ CLASS ZCL_POS_SALES_SET IMPLEMENTATION.
     CHECK lt_article_price IS NOT INITIAL.
     READ TABLE lt_article_price INDEX 1 INTO ls_article_price.
     SELECT vkorg, land1 FROM t001w INTO TABLE @DATA(lt_country) WHERE vkorg = @ls_article_price-vkorg.
-    mo_config_map = NEW #( ls_article_price-vkorg ).
+    mo_config_map = NEW #( iv_vkorg = ls_article_price-vkorg ).
 
 
 *------------------------------- CONTROL record ------------------------------------

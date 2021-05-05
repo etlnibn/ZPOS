@@ -166,7 +166,7 @@ CLASS zcl_pos_search_return DEFINITION
         red    TYPE lvc_col VALUE '6', "
       END OF co_alv_color .
     CONSTANTS co_car_system TYPE string VALUE 'CA1CLNT300' ##NO_TEXT.
-    CONSTANTS co_return_type TYPE auart VALUE 'RE2' ##NO_TEXT.
+    CONSTANTS co_return_type TYPE auart VALUE 'ZRE2' ##NO_TEXT.
 
     METHODS on_alv_double_click
       FOR EVENT double_click OF cl_salv_events_table
@@ -514,11 +514,6 @@ CLASS zcl_pos_search_return IMPLEMENTATION.
           MESSAGE ls_message-message TYPE 'I'.
         ENDLOOP.
 
-        APPEND INITIAL LINE TO et_message ASSIGNING <ls_message>.
-        <ls_message>-id      = 'ZPOS'.
-        <ls_message>-type    = 'E'.
-        <ls_message>-message = 'Tech Error: Return could not be created'.
-
       ENDIF.
 
     ENDIF.
@@ -539,42 +534,48 @@ CLASS zcl_pos_search_return IMPLEMENTATION.
           lv_item_number   TYPE posnr_va VALUE '000010',
           lv_bstkd         TYPE bstkd.   " Purchase Order Reference
 
+    DATA(lv_werks) = is_pos_transaction-retailstoreid.
+    SHIFT lv_werks LEFT DELETING LEADING '0'.
+    SELECT SINGLE * FROM t001w INTO @DATA(ls_t001w) WHERE werks = @lv_werks.
+
+    IF ls_t001w IS NOT INITIAL.
+
 *----------------------------------------------------------------------------
 * ORDER HEADER - START
 *----------------------------------------------------------------------------
 
-    ls_header_in-doc_type = co_return_type.
-    ls_header_in-sales_org  = '1090'.
-    ls_header_in-distr_chan = '90'.
-    ls_header_in-division   = '90'.
-    ls_header_in-purch_date = sy-datum.
-    ls_header_in-req_date_h = sy-datum.
-    ls_header_in-doc_date   = sy-datum.
-    ls_header_in-price_date = sy-datum.
-    ls_header_in-ord_reason = '101'.
+      ls_header_in-doc_type = co_return_type.
+      ls_header_in-sales_org  = ls_t001w-vkorg.
+      ls_header_in-distr_chan = ls_t001w-vtweg.
+      ls_header_in-division   = '10'.
+      ls_header_in-purch_date = sy-datum.
+      ls_header_in-req_date_h = sy-datum.
+      ls_header_in-doc_date   = sy-datum.
+      ls_header_in-price_date = sy-datum.
+      ls_header_in-ord_reason = '101'.
 
-    ls_header_in-purch_no_c = is_pos_transaction-retailstoreid && '-' &&
-                              is_pos_transaction-businessdaydate && '-'.
+      ls_header_in-purch_no_c = is_pos_transaction-retailstoreid && '-' &&
+                                is_pos_transaction-businessdaydate && '-'.
 
-    lv_bstkd = is_pos_transaction-workstationid.
-    SHIFT lv_bstkd LEFT DELETING LEADING '0'.
-    ls_header_in-purch_no_c = ls_header_in-purch_no_c && lv_bstkd && '-'.
+      lv_bstkd = is_pos_transaction-workstationid.
+      SHIFT lv_bstkd LEFT DELETING LEADING '0'.
+      ls_header_in-purch_no_c = ls_header_in-purch_no_c && lv_bstkd && '-'.
 
-    lv_bstkd = is_pos_transaction-transnumber.
-    SHIFT lv_bstkd LEFT DELETING LEADING '0'.
-    ls_header_in-purch_no_c = ls_header_in-purch_no_c && lv_bstkd.
+      lv_bstkd = is_pos_transaction-transnumber.
+      SHIFT lv_bstkd LEFT DELETING LEADING '0'.
+      ls_header_in-purch_no_c = ls_header_in-purch_no_c && lv_bstkd.
 
 
-    ls_header_inx-updateflag  = 'I'.
-    ls_header_inx-sales_org  = abap_true.
-    ls_header_inx-distr_chan = abap_true.
-    ls_header_inx-division   = abap_true.
-    ls_header_inx-purch_date = abap_true.
-    ls_header_inx-req_date_h = abap_true.
-    ls_header_inx-doc_date   = abap_true.
-    ls_header_inx-price_date = abap_true.
-    ls_header_in-ord_reason  = abap_true.
-    ls_header_inx-purch_no_c = abap_true.
+      ls_header_inx-updateflag  = 'I'.
+      ls_header_inx-sales_org  = abap_true.
+      ls_header_inx-distr_chan = abap_true.
+      ls_header_inx-division   = abap_true.
+      ls_header_inx-purch_date = abap_true.
+      ls_header_inx-req_date_h = abap_true.
+      ls_header_inx-doc_date   = abap_true.
+      ls_header_inx-price_date = abap_true.
+      ls_header_in-ord_reason  = abap_true.
+      ls_header_inx-purch_no_c = abap_true.
 
 
 *----------------------------------------------------------------------------
@@ -585,21 +586,21 @@ CLASS zcl_pos_search_return IMPLEMENTATION.
 *----------------------------------------------------------------------------
 * ORDER PARTNERS - START
 *----------------------------------------------------------------------------
-    APPEND INITIAL LINE TO lt_partners ASSIGNING FIELD-SYMBOL(<ls_partner>).
-    <ls_partner>-partn_role = 'AG'.
-    <ls_partner>-partn_numb = 'PAYMENT'.
+      APPEND INITIAL LINE TO lt_partners ASSIGNING FIELD-SYMBOL(<ls_partner>).
+      <ls_partner>-partn_role = 'AG'.
+      <ls_partner>-partn_numb = is_pos_transaction-retailstoreid.
 
-    APPEND INITIAL LINE TO lt_partners ASSIGNING <ls_partner>.
-    <ls_partner>-partn_role = 'RE'.
-    <ls_partner>-partn_numb = 'PAYMENT'.
+      APPEND INITIAL LINE TO lt_partners ASSIGNING <ls_partner>.
+      <ls_partner>-partn_role = 'RE'.
+      <ls_partner>-partn_numb = is_pos_transaction-retailstoreid.
 
-    APPEND INITIAL LINE TO lt_partners ASSIGNING <ls_partner>.
-    <ls_partner>-partn_role = 'RG'.
-    <ls_partner>-partn_numb = 'PAYMENT'.
+      APPEND INITIAL LINE TO lt_partners ASSIGNING <ls_partner>.
+      <ls_partner>-partn_role = 'RG'.
+      <ls_partner>-partn_numb = is_pos_transaction-retailstoreid.
 
-    APPEND INITIAL LINE TO lt_partners ASSIGNING <ls_partner>.
-    <ls_partner>-partn_role = 'WE'.
-    <ls_partner>-partn_numb = 'PAYMENT'.
+      APPEND INITIAL LINE TO lt_partners ASSIGNING <ls_partner>.
+      <ls_partner>-partn_role = 'WE'.
+      <ls_partner>-partn_numb = is_pos_transaction-retailstoreid.
 
 *----------------------------------------------------------------------------
 * ORDER PARTNERS - END
@@ -610,65 +611,74 @@ CLASS zcl_pos_search_return IMPLEMENTATION.
 *----------------------------------------------------------------------------
 * ORDER ITEMS - START
 *----------------------------------------------------------------------------
-    LOOP AT is_pos_transaction-receipt_lineitem INTO DATA(ls_lineitem) WHERE retailquantity > 0 .
+      LOOP AT is_pos_transaction-receipt_lineitem INTO DATA(ls_lineitem) WHERE retailquantity > 0 .
 
-      APPEND INITIAL LINE TO lt_items_in ASSIGNING FIELD-SYMBOL(<ls_item_in>).
-      <ls_item_in>-itm_number = lv_item_number.
-      <ls_item_in>-material   = ls_lineitem-itemid.
-      <ls_item_in>-plant      = is_pos_transaction-retailstoreid.
-      <ls_item_in>-target_qty = ls_lineitem-returnquantity.
-      <ls_item_in>-target_qu  = ls_lineitem-salesuom.
+        APPEND INITIAL LINE TO lt_items_in ASSIGNING FIELD-SYMBOL(<ls_item_in>).
+        <ls_item_in>-itm_number = lv_item_number.
+        <ls_item_in>-material   = ls_lineitem-materialnumber.
+        <ls_item_in>-plant      = lv_werks.
+        <ls_item_in>-target_qty = ls_lineitem-returnquantity.
+        <ls_item_in>-target_qu  = ls_lineitem-salesuom.
 
-      APPEND INITIAL LINE TO lt_items_inx ASSIGNING FIELD-SYMBOL(<ls_item_inx>).
-      <ls_item_inx>-itm_number = lv_item_number.
-      <ls_item_inx>-updateflag = 'I'.
-      <ls_item_inx>-material   = abap_true.
-      <ls_item_inx>-plant      = abap_true.
-      <ls_item_inx>-target_qty = abap_true.
-      <ls_item_inx>-target_qu  = abap_true.
+        APPEND INITIAL LINE TO lt_items_inx ASSIGNING FIELD-SYMBOL(<ls_item_inx>).
+        <ls_item_inx>-itm_number = lv_item_number.
+        <ls_item_inx>-updateflag = 'I'.
+        <ls_item_inx>-material   = abap_true.
+        <ls_item_inx>-plant      = abap_true.
+        <ls_item_inx>-target_qty = abap_true.
+        <ls_item_inx>-target_qu  = abap_true.
 
-      APPEND INITIAL LINE TO lt_schedules_in ASSIGNING FIELD-SYMBOL(<ls_schedule_in>).
-      <ls_schedule_in>-itm_number = lv_item_number.
-      <ls_schedule_in>-req_qty = <ls_item_in>-target_qty.
+        APPEND INITIAL LINE TO lt_schedules_in ASSIGNING FIELD-SYMBOL(<ls_schedule_in>).
+        <ls_schedule_in>-itm_number = lv_item_number.
+        <ls_schedule_in>-req_qty = <ls_item_in>-target_qty.
 
-      APPEND INITIAL LINE TO lt_schedules_inx ASSIGNING FIELD-SYMBOL(<ls_schedule_inx>).
-      <ls_schedule_inx>-itm_number = lv_item_number.
-      <ls_schedule_inx>-req_qty = abap_true.
+        APPEND INITIAL LINE TO lt_schedules_inx ASSIGNING FIELD-SYMBOL(<ls_schedule_inx>).
+        <ls_schedule_inx>-itm_number = lv_item_number.
+        <ls_schedule_inx>-req_qty = abap_true.
 
 
-      APPEND INITIAL LINE TO lt_conditions_in ASSIGNING FIELD-SYMBOL(<ls_condition_in>).
-      <ls_condition_in>-itm_number = lv_item_number.
-      <ls_condition_in>-cond_type = 'VKP0'.
+        APPEND INITIAL LINE TO lt_conditions_in ASSIGNING FIELD-SYMBOL(<ls_condition_in>).
+        <ls_condition_in>-itm_number = lv_item_number.
+        <ls_condition_in>-cond_type = 'VKP0'.
 * This is only a very simplistic solution and not at all good enough for the final solution
-      <ls_condition_in>-cond_value = ls_lineitem-returnamount / 10 .         "BAPI Needs values divided by 10.
+        <ls_condition_in>-cond_value = ls_lineitem-returnamount / 10 .         "BAPI Needs values divided by 10.
 
-      lv_item_number += 10.
+        lv_item_number += 10.
 
-    ENDLOOP.
+      ENDLOOP.
 *----------------------------------------------------------------------------
 * ORDER ITEMS - END
 *----------------------------------------------------------------------------
 
-    IF NOT lt_items_in[] IS INITIAL.
+      IF NOT lt_items_in[] IS INITIAL.
 
-      CALL FUNCTION 'BAPI_SALESDOCU_CREATEFROMDATA1'
-        EXPORTING
-          sales_header_in     = ls_header_in
-          sales_header_inx    = ls_header_inx
-        IMPORTING
-          salesdocument_ex    = ev_docnum
-        TABLES
-          return              = et_message
-          sales_items_in      = lt_items_in
-          sales_items_inx     = lt_items_inx
-          sales_partners      = lt_partners
-          sales_schedules_in  = lt_schedules_in
-          sales_schedules_inx = lt_schedules_inx
-          sales_conditions_in = lt_conditions_in.
+        CALL FUNCTION 'BAPI_SALESDOCU_CREATEFROMDATA1'
+          EXPORTING
+            sales_header_in     = ls_header_in
+            sales_header_inx    = ls_header_inx
+          IMPORTING
+            salesdocument_ex    = ev_docnum
+          TABLES
+            return              = et_message
+            sales_items_in      = lt_items_in
+            sales_items_inx     = lt_items_inx
+            sales_partners      = lt_partners
+            sales_schedules_in  = lt_schedules_in
+            sales_schedules_inx = lt_schedules_inx
+            sales_conditions_in = lt_conditions_in.
 
-      CALL FUNCTION 'BAPI_TRANSACTION_COMMIT'
-        EXPORTING
-          wait = abap_true.
+        CALL FUNCTION 'BAPI_TRANSACTION_COMMIT'
+          EXPORTING
+            wait = abap_true.
+
+      ENDIF.
+
+    ELSE.
+
+      APPEND INITIAL LINE TO et_message ASSIGNING FIELD-SYMBOL(<ls_message>).
+      <ls_message>-id      = 'ZPOS'.
+      <ls_message>-type    = 'E'.
+      <ls_message>-message = 'Could not find the sales area in table T001W for store ' && lv_werks.
 
     ENDIF.
 

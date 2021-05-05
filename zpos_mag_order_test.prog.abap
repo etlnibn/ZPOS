@@ -60,8 +60,8 @@ START-OF-SELECTION.
                                                     iv_increase_inventory = p_invt ).
     ENDIF.
 
-    IF p_bill = abap_true AND lv_delivery IS NOT INITIAL.
-      zcl_pos_mag_order_test=>create_billing_document( iv_delivery = lv_delivery ).
+    IF p_bill = abap_true.
+      zcl_pos_mag_order_test=>create_billing_document( iv_order = lv_order ).
     ENDIF.
 
     IF p_flow = abap_true.

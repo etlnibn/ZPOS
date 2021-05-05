@@ -64,6 +64,7 @@ DATA:
   gt_makt        TYPE STANDARD TABLE OF makt,
   gv_currency    TYPE waers,
   gt_message     TYPE bapiret2_t,
+  gs_message     TYPE bapiret2,
   gv_field       TYPE char50,
   gv_pick_line   TYPE syst_tabix,
   gv_destination TYPE rfcdest.

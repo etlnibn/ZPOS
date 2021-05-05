@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_POS_BILLING_API</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Magento Billing Notification API</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_BILLING_API</CLSNAME>
+     <CMPNAME>BILLING_NOTIFICATION_HANDLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Entry point for Billing Notification to Magento</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_BILLING_API</CLSNAME>
+     <CMPNAME>GET_MAGENTO_ORDERID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Retrieve Order ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_BILLING_API</CLSNAME>
+     <CMPNAME>MAP_BILLING_NOTIFY_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Maps the Billing Data to the Magento API Payload</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

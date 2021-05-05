@@ -442,5 +442,105 @@ CLASS lcl_zpos_ei_article IMPLEMENTATION.
       ENDTRY.
     ENDIF.
 
+
+**** UNCOMMENT THE FOLLOWING IF WE WANT TO PRODUCE THE XML MESSAGE OUTPUT
+
+*
+*    DATA:
+*      lr_cx_ai_system_fault    TYPE REF TO cx_ai_system_fault, "#EC NEEDED )
+*      lr_proxy_badi_processing TYPE REF TO cx_appl_proxy_badi_processing,
+*      ls_output                TYPE        wart_merchandiseerprepblkrq.
+*
+*
+** ws-rm enablement for multiple recipients
+** coding copied and adjusted due to enablement of WR-RM for multiple recipients
+*    DATA ls_ref_to_proxy              TYPE wes_s_ref_to_proxy.
+*    DATA lv_pi_message_id             TYPE sxmsmguid.
+*    DATA lv_recipient_changed_by_badi TYPE xfeld.
+*    DATA lv_recipient_before_badi     TYPE rtco_business_system_id.
+*    DATA lv_recipient_after_badi      TYPE rtco_business_system_id.
+*
+*
+*
+**  if MV_WS_RM_MULT_REC_ENABLED = sr_co->x.
+*
+** notes
+**  we do the mapping only once - even if the message shall be sent to multiple recipients
+**  we call the badi only once - even if the message shall be sent to multiple recipients
+*
+*    CALL METHOD core_object->map_data
+*      EXPORTING
+*        it_package  = it_package
+*      IMPORTING
+*        es_output   = ls_output
+*      CHANGING
+*        ct_messages = ct_messages.
+*    MOVE ls_output-merchandise_erpreplication_bul-message_header-recipient_business_system_id
+*      TO lv_recipient_before_badi.
+*
+*    TRY.
+*
+**       Call outbound proxy for each proxy instance
+*        LOOP AT core_object->mt_ref_to_proxy INTO ls_ref_to_proxy.
+*
+**         take over business recipient from system connection,
+**         but only if thereis no badi implementation which had changed the recipient
+*          IF NOT core_object->sr_co->x = lv_recipient_changed_by_badi.
+*            IF NOT ls_ref_to_proxy-recipient_business_system IS INITIAL.
+*              MOVE ls_ref_to_proxy-recipient_business_system
+*                TO ls_output-merchandise_erpreplication_bul-message_header-recipient_business_system_id.
+*            ENDIF.
+*          ENDIF.
+*
+*          core_object->mo_proxy ?= ls_ref_to_proxy-proxy_ref.
+*
+*
+**     Don't send message in test mode
+*          IF core_object->ms_runtime_param-testrun = abap_false AND ls_output IS NOT INITIAL.
+**       Call outbound proxy
+*            core_object->mo_proxy->merchandiserprepbulkrq( ls_output ).
+*          ENDIF.
+*
+*
+**     Get ID of sent message.
+*          lv_pi_message_id = ls_ref_to_proxy-msg_id_prot_ref->get_message_id( ).
+*
+*          ls_ref_to_proxy-pi_message_id = lv_pi_message_id.
+*          MODIFY core_object->mt_ref_to_proxy FROM ls_ref_to_proxy.
+*
+*          IF ev_pi_message_id IS REQUESTED.
+*            ev_pi_message_id = lv_pi_message_id.
+*          ENDIF.
+*
+*
+*          CALL METHOD core_object->start_test
+*            EXPORTING
+*              iv_xi_msg_guid = lv_pi_message_id
+**             IO_MESSAGE_ID_PROTOCOL =
+*              iv_serv_impl   = '0100'
+*              is_message_out = ls_output-merchandise_erpreplication_bul-merchandise_erpreplication_req.
+*
+*        ENDLOOP.
+*
+*
+*      CATCH cx_ai_system_fault INTO lr_cx_ai_system_fault.
+**     create error message for Proxy call
+*        CALL FUNCTION 'RDM_OPT_MESSAGE_ADD'
+*          EXPORTING
+*            i_probclass = core_object->sr_co->msg_probclass_1
+*            i_sortfield = core_object->sr_co->sortfield_merchandise
+*            i_msgid     = core_object->sr_co->msg_id_common
+*            i_msgty     = core_object->sr_co->msg_type_error
+*            i_msgno     = '012'
+**           i_detlevel  = '3'
+*          CHANGING
+*            xt_messages = ct_messages.
+*
+*      CATCH cx_appl_proxy_badi_processing INTO lr_proxy_badi_processing.
+*
+*    ENDTRY.
+
+
+
   ENDMETHOD.
 ENDCLASS.

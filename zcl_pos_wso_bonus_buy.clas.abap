@@ -272,7 +272,7 @@ CLASS ZCL_POS_WSO_BONUS_BUY IMPLEMENTATION.
 
     READ TABLE it_orgsites INDEX 1 INTO DATA(ls_site).
 
-    mo_config_map = NEW #( ls_site-vkorg ).
+    mo_config_map = NEW #( iv_vkorg = ls_site-vkorg ).
 
     SELECT vkorg, land1 FROM t001w
               INTO TABLE @DATA(lt_country)

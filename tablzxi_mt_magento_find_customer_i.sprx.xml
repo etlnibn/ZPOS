@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_MT_MAGENTO_FIND_CUSTOMER_I</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>ZXI_MT_MAGENTO_FIND_CUSTOMER_I</OBJ_NAME_M>
+     <HASH_ID>E2B240969CC1D348AE754515114EE9EC4380414F</HASH_ID>
+     <ID>&lt;message&gt; MT_Magento_FindCustomerInfoResp urn:bahag:S4N:Magento urn:bahag:S4N:Magento</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>MT_Magento_FindCustomerInfoResp</IFR_NAME>
+     <IFR_NSPCE>urn:bahag:S4N:Magento</IFR_NSPCE>
+     <IFR_GNSPCE>urn:bahag:S4N:Magento</IFR_GNSPCE>
+     <GEN_VERS>0006</GEN_VERS>
+     <PREFIX>ZXI_</PREFIX>
+     <CATEGORY>ifmmessage</CATEGORY>
+     <X-ML_NSPCE>urn:bahag:S4N:Magento</X-ML_NSPCE>
+     <X-ML_NAME>MT_Magento_FindCustomerInfoResp</X-ML_NAME>
+     <VERSION_ID>784bc98ca75c11ebca3600000a54dd5a</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_MT_MAGENTO_FIND_CUSTOMER_I</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>MT_MAGENTO_FIND_CUSTOMER_INFO</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>MT_MAGENTO_FIND_CUSTOMER_INFO</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>ZXI_DT_MAGENTO_FIND_CUSTOMER_3</OBJ_NAME_R>
+     <ID>&lt;part&gt; MT_Magento_FindCustomerInfoResp &lt;message&gt; MT_Magento_FindCustomerInfoResp urn:bahag:S4N:Magento urn:bahag:S4N:Magento</ID>
+     <IFR_TYPE>part</IFR_TYPE>
+     <IFR_NAME>MT_Magento_FindCustomerInfoResp</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>MT_MAGENTO_FIND_CUSTOMER_INFO</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_MT_MAGENTO_FIND_CUSTOMER_I</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZXI_MT_MAGENTO_FIND_CUSTOMER_I</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZXI_MT_MAGENTO_FIND_CUSTOMER_I</OBJ_NAME2>
+     <ID>&lt;message&gt; MT_Magento_FindCustomerInfoResp urn:bahag:S4N:Magento urn:bahag:S4N:Magento</ID>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>MT_Magento_FindCustomerInfoResp</IFR_NAME>
+     <IFR_TEXT>I0113_1</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZXI_MT_MAGENTO_FIND_CUSTOMER_I</R3_NAME>
+     <R3_TEXT>I0113_1</R3_TEXT>
+     <CATEGORY>ifmmessage</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

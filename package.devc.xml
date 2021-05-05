@@ -4,6 +4,8 @@
   <asx:values>
    <DEVC>
     <CTEXT>POS INTEGRATION</CTEXT>
+    <COMP_POSID>SD-POS</COMP_POSID>
+    <COMPONENT>I020004209</COMPONENT>
    </DEVC>
   </asx:values>
  </asx:abap>

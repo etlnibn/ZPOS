@@ -322,7 +322,7 @@ CLASS ZCL_POS_WSO_PROMOTION IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD CREATE_RETAIL_EVENTS.
+  METHOD create_retail_events.
 
 * A Promo can contain multiple BBYs
 * When this happens it is because of scales (or this is the only scenario we are covering)
@@ -357,7 +357,7 @@ CLASS ZCL_POS_WSO_PROMOTION IMPLEMENTATION.
       RAISE EXCEPTION mx_exception.
     ENDIF.
 
-    mo_config_map = NEW #( lv_vkorg ).
+    mo_config_map = NEW #( iv_vkorg = lv_vkorg ).
 
     SELECT vkorg, land1 FROM t001w
               INTO TABLE @DATA(lt_country)

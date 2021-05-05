@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_EXT_ATTR_STY</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>ZXI_CO_SI_OS_MAGENTO_PRODUCT_E</OBJ_NAME_M>
+     <HASH_ID>42755227C57B9C448C152098C1E3F28165EF7E96</HASH_ID>
+     <ID>&lt;type&gt; ZPOS_MAG_EXT_ATTR_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ZPOS_MAG_EXT_ATTR_STY</IFR_NAME>
+     <IFR_GNSPCE>SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>ZXI_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NAME>ZPOS_MAG_EXT_ATTR_STY</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_EXT_ATTR_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>BUNDLE_PRODUCT_OPTIONS</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>BUNDLE_PRODUCT_OPTIONS</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>ZXI_ZPOS_MAG_BUNDLE_TTY</OBJ_NAME_R>
+     <ID>&lt;element&gt; bundle_product_options &lt;type&gt; ZPOS_MAG_EXT_ATTR_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>bundle_product_options</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>BUNDLE_PRODUCT_OPTIONS</R3_NAME>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_EXT_ATTR_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>CATEGORY_LINKS</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>CATEGORY_LINKS</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>ZXI_ZPOS_MAG_CAT_LINKS_TTY</OBJ_NAME_R>
+     <ID>&lt;element&gt; category_links &lt;type&gt; ZPOS_MAG_EXT_ATTR_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>category_links</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>CATEGORY_LINKS</R3_NAME>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_EXT_ATTR_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>STOCK_ITEMS</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>STOCK_ITEMS</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>ZXI_ZPOS_MAG_STOCK_ITEM_STY</OBJ_NAME_R>
+     <ID>&lt;element&gt; stock_items &lt;type&gt; ZPOS_MAG_EXT_ATTR_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>stock_items</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>STOCK_ITEMS</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_EXT_ATTR_STY</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZXI_ZPOS_MAG_EXT_ATTR_STY</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZXI_ZPOS_MAG_EXT_ATTR_STY</OBJ_NAME2>
+     <ID>&lt;type&gt; ZPOS_MAG_EXT_ATTR_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ZPOS_MAG_EXT_ATTR_STY</IFR_NAME>
+     <IFR_TEXT>Magento Product API - PUT Structure - Extension Attributes</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZXI_ZPOS_MAG_EXT_ATTR_STY</R3_NAME>
+     <R3_TEXT>Magento Product API - PUT Structure - Extension Attributes</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

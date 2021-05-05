@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_PRODUCT</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>ZXI_CO_SI_OS_MAGENTO_PRODUCT_E</OBJ_NAME_M>
+     <HASH_ID>0585B38FA2C79034C28FE074E35648517AAB7452</HASH_ID>
+     <ID>&lt;message&gt; product  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>product</IFR_NAME>
+     <IFR_GNSPCE>SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</IFR_GNSPCE>
+     <GEN_VERS>0006</GEN_VERS>
+     <PREFIX>ZXI_</PREFIX>
+     <CATEGORY>ifmmessage</CATEGORY>
+     <X-ML_NAME>product</X-ML_NAME>
+     <VERSION_ID>c3be7de79f6711eb89f900000a54dd5a</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_PRODUCT</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>PRODUCT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>PRODUCT</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>ZXI_ZPOS_MAG_ARTICLE_MAIN_STY</OBJ_NAME_R>
+     <ID>&lt;part&gt; product &lt;message&gt; product  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>part</IFR_TYPE>
+     <IFR_NAME>product</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>PRODUCT</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_PRODUCT</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZXI_PRODUCT</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZXI_PRODUCT</OBJ_NAME2>
+     <ID>&lt;message&gt; product  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>product</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZXI_PRODUCT</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmmessage</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

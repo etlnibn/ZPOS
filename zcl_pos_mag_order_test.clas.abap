@@ -18,7 +18,7 @@ public section.
       value(RV_DOCNUM) type EDI_DOCNUM .
   class-methods CREATE_BILLING_DOCUMENT
     importing
-      !IV_DELIVERY type VBELN
+      !IV_ORDER type VBELN
     returning
       value(RV_BILLING) type VBELN .
   class-methods GET_DELIVERY_VIA_DOCFLOW
@@ -50,8 +50,8 @@ CLASS ZCL_POS_MAG_ORDER_TEST IMPLEMENTATION.
           lt_success  TYPE STANDARD TABLE OF bapivbrksuccess.
 
     APPEND INITIAL LINE TO lt_bapivbrk ASSIGNING FIELD-SYMBOL(<ls_bapivbrk>).
-    <ls_bapivbrk>-ref_doc    = iv_delivery.
-    <ls_bapivbrk>-ref_doc_ca = 'J'.
+    <ls_bapivbrk>-ref_doc    = iv_order.
+    <ls_bapivbrk>-ref_doc_ca = 'C'.
 
     CALL FUNCTION 'BAPI_BILLINGDOC_CREATEMULTIPLE'
 *     EXPORTING

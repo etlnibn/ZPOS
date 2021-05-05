@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_STOCK_ITEM_STY</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>ZXI_CO_SI_OS_MAGENTO_PRODUCT_E</OBJ_NAME_M>
+     <HASH_ID>7D8E8041D533FC1001DCF82F92DDE4D44D637CF8</HASH_ID>
+     <ID>&lt;type&gt; ZPOS_MAG_STOCK_ITEM_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ZPOS_MAG_STOCK_ITEM_STY</IFR_NAME>
+     <IFR_GNSPCE>SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>ZXI_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NAME>ZPOS_MAG_STOCK_ITEM_STY</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_STOCK_ITEM_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>IS_IN_STOCK</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>IS_IN_STOCK</OBJ_NAME2>
+     <ID>&lt;element&gt; is_in_stock &lt;type&gt; ZPOS_MAG_STOCK_ITEM_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>is_in_stock</IFR_NAME>
+     <IFR_TEXT>Data element for domain BOOLE: TRUE (=&apos;X&apos;) and FALSE (=&apos; &apos;)</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>1</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>IS_IN_STOCK</R3_NAME>
+     <R3_TEXT>Data element for domain BOOLE: TRUE (=&apos;X&apos;) and FALSE (=&apos; &apos;)</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000001</R3_LENGTH>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_STOCK_ITEM_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>IS_QTY_DECIMAL</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>IS_QTY_DECIMAL</OBJ_NAME2>
+     <ID>&lt;element&gt; is_qty_decimal &lt;type&gt; ZPOS_MAG_STOCK_ITEM_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>is_qty_decimal</IFR_NAME>
+     <IFR_TEXT>Data element for domain BOOLE: TRUE (=&apos;X&apos;) and FALSE (=&apos; &apos;)</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>1</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>IS_QTY_DECIMAL</R3_NAME>
+     <R3_TEXT>Data element for domain BOOLE: TRUE (=&apos;X&apos;) and FALSE (=&apos; &apos;)</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000001</R3_LENGTH>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_STOCK_ITEM_STY</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>QTY</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>QTY</OBJ_NAME2>
+     <ID>&lt;element&gt; qty &lt;type&gt; ZPOS_MAG_STOCK_ITEM_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>qty</IFR_NAME>
+     <IFR_TEXT>4 Byte Signed Integer</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>int</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>QTY</R3_NAME>
+     <R3_TEXT>4 Byte Signed Integer</R3_TEXT>
+     <R3_DATATYP>INT4</R3_DATATYP>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZXI_ZPOS_MAG_STOCK_ITEM_STY</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZXI_ZPOS_MAG_STOCK_ITEM_STY</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZXI_ZPOS_MAG_STOCK_ITEM_STY</OBJ_NAME2>
+     <ID>&lt;type&gt; ZPOS_MAG_STOCK_ITEM_STY  SI_OS_MAGENTO_PRODUCT_External_Message(urn:bahag:S4N:Magento)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ZPOS_MAG_STOCK_ITEM_STY</IFR_NAME>
+     <IFR_TEXT>Magento Product API - PUT Structure - Stock Item</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZXI_ZPOS_MAG_STOCK_ITEM_STY</R3_NAME>
+     <R3_TEXT>Magento Product API - PUT Structure - Stock Item</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

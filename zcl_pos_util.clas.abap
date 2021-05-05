@@ -1,18 +1,16 @@
-CLASS zcl_pos_util DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_POS_UTIL definition
+  public
+  final
+  create public .
 
-  PUBLIC SECTION.
+public section.
 
-    CONSTANTS co_all TYPE string VALUE '' ##NO_TEXT.
-    CONSTANTS co_bundle TYPE string VALUE 'bundle' ##NO_TEXT.
-    CONSTANTS co_car_pos_search TYPE rvari_vnam VALUE 'CAR_POS_SEARCH' ##NO_TEXT.
-    CONSTANTS co_discount_group TYPE zpos_source2 VALUE 'DISCGROUP' ##NO_TEXT.
-
-
-    CONSTANTS:
-      BEGIN OF co_condition_type,
+  constants CO_ALL type STRING value '' ##NO_TEXT.
+  constants CO_BUNDLE type STRING value 'bundle' ##NO_TEXT.
+  constants CO_CAR_POS_SEARCH type RVARI_VNAM value 'CAR_POS_SEARCH' ##NO_TEXT.
+  constants CO_DISCOUNT_GROUP type ZPOS_SOURCE2 value 'DISCGROUP' ##NO_TEXT.
+  constants:
+    BEGIN OF co_condition_type,
         competitor_vkorg_price TYPE kscha VALUE 'ZKC0',
         competitor_werks_price TYPE kscha VALUE 'ZKC1',
         store_price            TYPE kscha VALUE 'ZKP1',
@@ -21,53 +19,46 @@ CLASS zcl_pos_util DEFINITION
         effective_price        TYPE kscha VALUE 'ZWSO',
         discount_amount        TYPE kscha VALUE 'GPA1',
       END OF co_condition_type .
-
-
-    CONSTANTS co_application TYPE kappl VALUE 'V' ##NO_TEXT.
-    CONSTANTS co_condition_table_991 TYPE kotabnr VALUE '991' ##NO_TEXT.
-    CONSTANTS co_english_language TYPE spras VALUE 'E' ##NO_TEXT.
-    CONSTANTS co_detailed_language TYPE spras VALUE 'Z' ##NO_TEXT.
-    CONSTANTS co_kappl TYPE kappl VALUE 'V' ##NO_TEXT.
-
-
-    CONSTANTS:
-      BEGIN OF co_offer_category,
+  constants CO_APPLICATION type KAPPL value 'V' ##NO_TEXT.
+  constants CO_CONDITION_TABLE_991 type KOTABNR value '991' ##NO_TEXT.
+  constants CO_ENGLISH_LANGUAGE type SPRAS value 'E' ##NO_TEXT.
+  constants CO_DETAILED_LANGUAGE type SPRAS value 'Z' ##NO_TEXT.
+  constants CO_KAPPL type KAPPL value 'V' ##NO_TEXT.
+  constants:
+    BEGIN OF co_offer_category,
         bonus_buy    TYPE zpos_offer_category VALUE 'B',
         sales_set    TYPE zpos_offer_category VALUE 'S',
         scaled_price TYPE zpos_offer_category VALUE 'P',
       END OF co_offer_category .
-
-    CONSTANTS:
-      BEGIN OF co_offer_discount_method,
+  constants:
+    BEGIN OF co_offer_discount_method,
         discount_amount  TYPE zpos_vk_discount_method VALUE '0',
         total_price      TYPE zpos_vk_discount_method VALUE '1',
         discount_percent TYPE zpos_vk_discount_method VALUE '2',
         pay_percent      TYPE zpos_vk_discount_method VALUE '3',     " Pay Percentage of select item(s)
-      END OF co_offer_discount_method.
-
-
-    CONSTANTS:
-      BEGIN OF co_distribution_channel,
+      END OF co_offer_discount_method .
+  constants:
+    BEGIN OF co_distribution_channel,
         store TYPE vtweg VALUE '10',
         web   TYPE vtweg VALUE '20',
       END OF co_distribution_channel .
-    CONSTANTS co_extra_scales TYPE zpos_source2 VALUE 'EXTRASCALES' ##NO_TEXT.
-    CONSTANTS:
-      BEGIN OF co_material_category,
+  constants CO_EXTRA_SCALES type ZPOS_SOURCE2 value 'EXTRASCALES' ##NO_TEXT.
+  constants:
+    BEGIN OF co_material_category,
         bundle TYPE attyp VALUE '10',
       END OF co_material_category .
-    CONSTANTS:
-      BEGIN OF co_msgty,
+  constants:
+    BEGIN OF co_msgty,
         error       TYPE msgty_co VALUE 'E',
         info        TYPE msgty_co VALUE 'I',
         success     TYPE msgty_co VALUE 'S',
         termination TYPE msgty_co VALUE 'A',
         warning     TYPE msgty_co VALUE 'W',
       END OF co_msgty .
-    CONSTANTS co_offer TYPE zpos_source1 VALUE 'OFFER' ##NO_TEXT.
-    CONSTANTS co_pos_msgid TYPE msgid VALUE 'ZPOS' ##NO_TEXT.
-    CONSTANTS:
-      BEGIN OF co_pos_recipient,
+  constants CO_OFFER type ZPOS_SOURCE1 value 'OFFER' ##NO_TEXT.
+  constants CO_POS_MSGID type MSGID value 'ZPOS' ##NO_TEXT.
+  constants:
+    BEGIN OF co_pos_recipient,
         viking        TYPE zpos_recipient VALUE 'VK',
         labelprinting TYPE zpos_recipient VALUE 'LP',
         esl           TYPE zpos_recipient VALUE 'ES',
@@ -76,55 +67,66 @@ CLASS zcl_pos_util DEFINITION
         magento_idoc  TYPE zpos_recipient VALUE 'MG',
         magento_api   TYPE zpos_recipient VALUE 'AP',
       END OF co_pos_recipient .
-    CONSTANTS co_price TYPE zpos_source1 VALUE 'PRICE' ##NO_TEXT.
-    CONSTANTS:
-      BEGIN OF co_recipient_status,
+  constants CO_PRICE type ZPOS_SOURCE1 value 'PRICE' ##NO_TEXT.
+  constants:
+    BEGIN OF co_recipient_status,
         created   TYPE zpos_recipient_status VALUE '10',
         sent      TYPE zpos_recipient_status VALUE '20',
         confirmed TYPE zpos_recipient_status VALUE '30',
         error     TYPE zpos_recipient_status VALUE '99',
       END OF co_recipient_status .
-    CONSTANTS co_selopt_opt_eq TYPE ddoption VALUE 'EQ' ##NO_TEXT.
-    CONSTANTS co_selopt_sign_i TYPE ddsign VALUE 'I' ##NO_TEXT.
-    CONSTANTS co_set_discount TYPE zpos_source2 VALUE 'SETDISCOUNT' ##NO_TEXT.
-    CONSTANTS co_sign_comma TYPE char1 VALUE ',' ##NO_TEXT.
-    CONSTANTS co_sign_dot TYPE char1 VALUE '.' ##NO_TEXT.
-    CONSTANTS co_sign_space TYPE char1 VALUE '' ##NO_TEXT.
-    CONSTANTS co_simple TYPE string VALUE 'simple' ##NO_TEXT.
-    CONSTANTS co_spras_e TYPE spras VALUE 'E' ##NO_TEXT.
-    CONSTANTS co_tax TYPE zpos_source1 VALUE 'TAX' ##NO_TEXT.
-    CONSTANTS co_viking TYPE zpos_grpid VALUE 'VIKING' ##NO_TEXT.
-    CONSTANTS co_magento TYPE zpos_grpid VALUE 'MAGENTO' ##NO_TEXT.
-    CONSTANTS co_article_check TYPE zpos_source2 VALUE 'ARTICLECHECK' ##NO_TEXT.
+  constants CO_SELOPT_OPT_EQ type DDOPTION value 'EQ' ##NO_TEXT.
+  constants CO_SELOPT_SIGN_I type DDSIGN value 'I' ##NO_TEXT.
+  constants CO_SET_DISCOUNT type ZPOS_SOURCE2 value 'SETDISCOUNT' ##NO_TEXT.
+  constants CO_SIGN_COMMA type CHAR1 value ',' ##NO_TEXT.
+  constants CO_SIGN_DOT type CHAR1 value '.' ##NO_TEXT.
+  constants CO_SIGN_SPACE type CHAR1 value '' ##NO_TEXT.
+  constants CO_SIMPLE type STRING value 'simple' ##NO_TEXT.
+  constants CO_SPRAS_E type SPRAS value 'E' ##NO_TEXT.
+  constants CO_TAX type ZPOS_SOURCE1 value 'TAX' ##NO_TEXT.
+  constants CO_VIKING type ZPOS_GRPID value 'VIKING' ##NO_TEXT.
+  constants CO_MAGENTO type ZPOS_GRPID value 'MAGENTO' ##NO_TEXT.
+  constants CO_ARTICLE_CHECK type ZPOS_SOURCE2 value 'ARTICLECHECK' ##NO_TEXT.
+  constants CO_ZEROBLANK type CHAR2 value '0 ' ##NO_TEXT.
 
-    CONSTANTS co_zeroblank TYPE char2 VALUE '0 ' ##NO_TEXT.
-
-    CLASS-METHODS remove_dec_separator
-      CHANGING
-        !cv_fieldvalue TYPE any .
-    CLASS-METHODS write_application_log
-      IMPORTING
-        !iv_logobj TYPE balobj_d
-        !iv_subobj TYPE balsubobj
-        !iv_msgid  TYPE symsgid
-        !iv_msgno  TYPE symsgno
-        !iv_msgty  TYPE symsgty
-        !iv_msgv1  TYPE symsgv OPTIONAL
-        !iv_msgv2  TYPE symsgv OPTIONAL
-        !iv_msgv3  TYPE symsgv OPTIONAL
-        !iv_msgv4  TYPE symsgv OPTIONAL .
-    CLASS-METHODS get_car_rfc_destination
-      RETURNING
-        VALUE(rv_destination) TYPE rfcdest
-      RAISING
-        zcx_pos_exception .
-    CLASS-METHODS create_appl_log
-      IMPORTING
-        !it_message          TYPE bapiret2_t
-        !iv_object           TYPE balobj_d
-        !iv_subobject        TYPE balsubobj
-      RETURNING
-        VALUE(rt_lognumbers) TYPE bal_t_lgnm .
+  class-methods REMOVE_DEC_SEPARATOR
+    changing
+      !CV_FIELDVALUE type ANY .
+  class-methods WRITE_APPLICATION_LOG
+    importing
+      !IV_LOGOBJ type BALOBJ_D
+      !IV_SUBOBJ type BALSUBOBJ
+      !IV_MSGID type SYMSGID
+      !IV_MSGNO type SYMSGNO
+      !IV_MSGTY type SYMSGTY
+      !IV_MSGV1 type SYMSGV optional
+      !IV_MSGV2 type SYMSGV optional
+      !IV_MSGV3 type SYMSGV optional
+      !IV_MSGV4 type SYMSGV optional .
+  class-methods GET_CAR_RFC_DESTINATION
+    returning
+      value(RV_DESTINATION) type RFCDEST
+    raising
+      ZCX_POS_EXCEPTION .
+  class-methods CREATE_APPL_LOG
+    importing
+      !IT_MESSAGE type BAPIRET2_T
+      !IV_OBJECT type BALOBJ_D
+      !IV_SUBOBJECT type BALSUBOBJ
+    returning
+      value(RT_LOGNUMBERS) type BAL_T_LGNM .
+  class-methods GET_LANGUAGE_BY_COUNTRY
+    importing
+      !IV_COUNTRY type LAND1
+    returning
+      value(RV_LANGUAGE) type SPRAS
+    raising
+      ZCX_POS_EXCEPTION .
+  class-methods GET_LANGUAGE_BY_SALESORG
+    importing
+      !IV_VKORG type VKORG
+    returning
+      value(RV_LANGUAGE) type SPRAS .
 protected section.
 *"* protected components of class ZCL_DTA_UTIL
 *"* do not include other source files here!!!
@@ -380,6 +382,44 @@ CLASS ZCL_POS_UTIL IMPLEMENTATION.
               WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.
 
     ENDIF.
+
+  ENDMETHOD.
+
+
+  METHOD get_language_by_country.
+
+    CASE iv_country.
+      WHEN 'SE'.
+        rv_language = 'V'.      "Swedish
+      WHEN 'DK'.
+        rv_language = 'K'.      "Danish
+      WHEN 'NO'.
+        rv_language = 'O'.      "Norwegian
+      WHEN 'IS'.
+        rv_language = 'b'.      "Icenlandic
+      WHEN OTHERS.
+        RAISE EXCEPTION TYPE zcx_pos_exception MESSAGE e025(zpos).
+
+    ENDCASE.
+
+  ENDMETHOD.
+
+
+  METHOD get_language_by_salesorg.
+
+    CASE iv_vkorg.
+      WHEN '9700'.
+        rv_language = 'V'.      "Swedish
+      WHEN '9000'.
+        rv_language = 'K'.      "Danish
+      WHEN '7400'.
+        rv_language = 'O'.      "Norwegian
+      WHEN '6800'.
+        rv_language = 'b'.      "Icenlandic
+      WHEN OTHERS.
+        rv_language = zcl_pos_util=>co_english_language.      "English for all other cases
+
+    ENDCASE.
 
   ENDMETHOD.
 ENDCLASS.

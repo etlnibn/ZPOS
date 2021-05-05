@@ -106,6 +106,12 @@
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CLSNAME>ZCL_POS_WSO_ARTICLE_PRICE</CLSNAME>
+     <CMPNAME>GET_ARTICLE_PRICE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Retrieves Price Data for a single Store / Article combo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_POS_WSO_ARTICLE_PRICE</CLSNAME>
      <CMPNAME>GET_ARTICLE_PRICELIST</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Gets Joined Article &amp; PriceList Data (IDoc)</DESCRIPT>
@@ -241,12 +247,6 @@
      <CMPNAME>TY_T_LAYOUT</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>Layout Module</DESCRIPT>
-    </SEOCOMPOTX>
-    <SEOCOMPOTX>
-     <CLSNAME>ZCL_POS_WSO_ARTICLE_PRICE</CLSNAME>
-     <CMPNAME>UTIL_SALESORG_LANGAUGE</CMPNAME>
-     <LANGU>E</LANGU>
-     <DESCRIPT>Utility Method --&gt; Sets Appropriate Langauge for SalesOrg</DESCRIPT>
     </SEOCOMPOTX>
    </DESCRIPTIONS>
   </asx:values>

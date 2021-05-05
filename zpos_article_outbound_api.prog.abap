@@ -39,14 +39,27 @@ START-OF-SELECTION.
 
   TRY.
 
-      zcl_pos_article_api=>article_collective_handler(
-                     EXPORTING
-                        iv_status   = p_sts
-                        iv_valid_on = p_dat
-                        iv_vkorg    = p_vkorg
-                        it_r_werks  = s_werks[]
-                        it_r_matnr  = s_matnr[]
-                        )  .
+      IF sy-uname = 'BRENNANN' or sy-uname = 'MENDESJ'.
+        zcl_pos_article_2_api=>article_collective_handler(
+                       EXPORTING
+                          iv_status   = p_sts
+                          iv_valid_on = p_dat
+                          iv_vkorg    = p_vkorg
+                          it_r_werks  = s_werks[]
+                          it_r_matnr  = s_matnr[]
+                          )  .
+      ELSE.
+
+        zcl_pos_article_api=>article_collective_handler(
+                       EXPORTING
+                          iv_status   = p_sts
+                          iv_valid_on = p_dat
+                          iv_vkorg    = p_vkorg
+                          it_r_werks  = s_werks[]
+                          it_r_matnr  = s_matnr[]
+                          )  .
+
+      ENDIF.
 
     CATCH zcx_pos_exception INTO DATA(lo_error).
       MESSAGE lo_error->get_text( ) TYPE 'I'.

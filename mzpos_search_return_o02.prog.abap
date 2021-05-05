@@ -1,5 +1,5 @@
 *&---------------------------------------------------------------------*
-*& Include MZPOS_SEARCH_RETURN_O02
+*& Include MZPOS_SEARCH_RETURN_O02 - Invoice Related Modules
 *&---------------------------------------------------------------------*
 
 MODULE tc_return_bask_change_tc_attr OUTPUT.

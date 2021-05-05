@@ -164,7 +164,7 @@ FORM refresh_pos_receipt_details USING wa_pos_receipt TYPE tp_pos_receipt.
 
       APPEND INITIAL LINE TO gt_pos_line ASSIGNING FIELD-SYMBOL(<ls_pos_line>).
       MOVE-CORRESPONDING ls_lineitem TO <ls_pos_line>.
-      READ TABLE gt_makt WITH KEY matnr = <ls_pos_line>-itemid INTO DATA(ls_makt) BINARY SEARCH.
+      READ TABLE gt_makt WITH KEY matnr = <ls_pos_line>-materialnumber INTO DATA(ls_makt) BINARY SEARCH.
       IF sy-subrc = 0.
         <ls_pos_line>-description = ls_makt-maktx.
       ENDIF.
@@ -306,8 +306,10 @@ FORM return_partial_receipt.
       ENDIF.
 
     ELSE.
-
-      MESSAGE TEXT-007 TYPE 'I'.
+      LOOP AT gt_message INTO gs_message WHERE type = zcl_pos_util=>co_msgty-error.
+        MESSAGE gs_message-message TYPE 'I'.
+      ENDLOOP.
+      CLEAR gt_message.
 
     ENDIF.
 
@@ -325,7 +327,7 @@ FORM get_article_description.
     LOOP AT ls_transaction-receipt_lineitem INTO DATA(ls_lineitem).
 
       APPEND INITIAL LINE TO lt_pre09 ASSIGNING FIELD-SYMBOL(<ls_pre09>).
-      <ls_pre09>-matnr = ls_lineitem-itemid.
+      <ls_pre09>-matnr = ls_lineitem-materialnumber.
       <ls_pre09>-spras = sy-langu.
 
     ENDLOOP.

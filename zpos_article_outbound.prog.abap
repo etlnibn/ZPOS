@@ -36,7 +36,6 @@ AT SELECTION-SCREEN OUTPUT.
 START-OF-SELECTION.
 
   lcl_report=>check_mandatory_data( ).
-  p_dat = p_dat + p_lead.
 
   TRY.
       zcl_pos_wso_article_price=>create_outbound_article_idoc(

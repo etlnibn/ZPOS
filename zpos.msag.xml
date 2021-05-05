@@ -65,6 +65,12 @@
     <T100>
      <SPRSL>E</SPRSL>
      <ARBGB>ZPOS</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Error calling class &amp;1 mandatory import parameters missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
      <MSGNR>010</MSGNR>
      <TEXT>IDoc contains updates for entries not found in ZPOS_SHELF_LBL</TEXT>
     </T100>
@@ -73,6 +79,12 @@
      <ARBGB>ZPOS</ARBGB>
      <MSGNR>011</MSGNR>
      <TEXT>Entry &amp;1 - &amp;2 not found in ZPOS_SHELF_LBL</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Error retrieving Sales Org for Country code &amp;1</TEXT>
     </T100>
     <T100>
      <SPRSL>E</SPRSL>
@@ -114,7 +126,7 @@
      <SPRSL>E</SPRSL>
      <ARBGB>ZPOS</ARBGB>
      <MSGNR>025</MSGNR>
-     <TEXT>Sales Org &amp;1 was not expected - language could not be set</TEXT>
+     <TEXT>Input Value &amp;1 was not expected - language could not be set</TEXT>
     </T100>
     <T100>
      <SPRSL>E</SPRSL>
@@ -169,6 +181,12 @@
      <ARBGB>ZPOS</ARBGB>
      <MSGNR>034</MSGNR>
      <TEXT>Website Details Missing in Table ZPOS_WEBSITE</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPOS</ARBGB>
+     <MSGNR>035</MSGNR>
+     <TEXT>Could not find the sales area in table T001W for store &amp;1</TEXT>
     </T100>
     <T100>
      <SPRSL>E</SPRSL>
